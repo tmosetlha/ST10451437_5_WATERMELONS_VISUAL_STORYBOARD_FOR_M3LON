@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M3LON · Visual Storyboard · The 5 Watermelons</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HERO SECTION ===== -->
+  <header class="hero">
+    <div class="hero-scanlines"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="badge-chip">OPSC6311 · THE 5 WATERMELONS · MARCH 2026</div>
+      <div class="logo-wrap">
+        <div class="logo-icon">🍉</div>
+        <div class="logo-text">
+          <span class="logo-m">M</span><span class="logo-3">3</span><span class="logo-lon">LON</span>
+        </div>
+      </div>
+      <p class="hero-sub">SMART BANKING · SLICED SIMPLE</p>
+      <p class="hero-tagline">// VISUAL STORYBOARD · APP UI GUIDE · ANDROID STUDIO</p>
+
+      <div class="robot-hero">
+        <div class="robot" id="heroRobot">
+          <div class="robot-head">
+            <div class="robot-eye left"></div>
+            <div class="robot-eye right"></div>
+            <div class="robot-mouth"></div>
+            <div class="robot-antenna"></div>
+          </div>
+          <div class="robot-body">
+            <div class="robot-chest-display">M3LON<br/><span>v1.0</span></div>
+          </div>
+          <div class="robot-arms">
+            <div class="robot-arm left">👋</div>
+            <div class="robot-arm right">📱</div>
+          </div>
+        </div>
+        <div class="speech-bubble hero-speech">
+          <span class="type-text">GREETINGS, WATERMELONS! I am <strong>MELON-BOT</strong> — your guide through the M3LON Android app. Each screen below is rendered inside a phone canvas. Scroll to begin your mission! 🚀</span>
+        </div>
+      </div>
+
+      <div class="team-list">
+        <span>ZANDILE SELAO · ST10436981</span>
+        <span>TSHIAMO MOSETLHA · ST10451437</span>
+        <span>MUHLURI NKUNA · ST10437226</span>
+        <span>MATLHOGONOLO KEEBINE · ST10452412</span>
+        <span>NDABEZINHLE MATHUNYANE · ST10457680</span>
+      </div>
+    </div>
+    <div class="scroll-cue">▼ SCROLL TO EXPLORE ▼</div>
+  </header>
+
+  <!-- ===== TECH SPEC BAR ===== -->
+  <div class="spec-bar">
+    <span>📱 ANDROID STUDIO</span>
+    <span>⚙️ KOTLIN + XML</span>
+    <span>🗄️ SQLITE / ROOM</span>
+    <span>🎨 MATERIAL DESIGN 3</span>
+    <span>🏆 GAMIFICATION ENGINE</span>
+    <span>🤖 AI RECEIPT SCANNER</span>
+    <span>📊 INTERACTIVE GRAPHS</span>
+    <span>📱 ANDROID STUDIO</span>
+    <span>⚙️ KOTLIN + XML</span>
+    <span>🗄️ SQLITE / ROOM</span>
+  </div>
+
+  <!-- ===== MAIN STORYBOARD ===== -->
+  <main class="storyboard">
+
+    <!-- ===== SCREEN 1: SPLASH ===== -->
+    <section class="comic-panel panel-1" data-screen="01">
+      <div class="panel-bg-number">01</div>
+      <div class="panel-inner">
+        <div class="robot-guide">
+          <div class="robot small">
+            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
+            <div class="robot-body small-body"></div>
+          </div>
+          <div class="speech-bubble left-bubble">
+            <strong>// SCREEN 01: SPLASH</strong><br/>
+            This is the <em>entry point</em>. The user sees the M3LON watermelon logo on a teal background. In Android Studio, this is an XML layout with a centred <code>ImageView</code> + <code>TextView</code>. The splash delays 2 seconds then navigates to Login via an <code>Intent</code>.
+          </div>
+        </div>
+
+        <div class="phone-canvas">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen screen-splash">
+              <div class="splash-bg">
+                <div class="splash-dots"></div>
+                <div class="splash-logo-wrap">
+                  <div class="wm-icon">🍉</div>
+                  <div class="splash-title">M3LON</div>
+                  <div class="splash-motto">Smart Banking<br/>Sliced Simple</div>
+                </div>
+                <div class="splash-loading">
+                  <div class="loading-bar"><div class="loading-fill"></div></div>
+                  <span>Initialising...</span>
+                </div>
+              </div>
+            </div>
+            <div class="phone-home-btn"></div>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> SplashActivity.kt</div>
+          <pre><code><span class="kw">class</span> <span class="cls">SplashActivity</span> : <span class="cls">AppCompatActivity</span>() {
+  <span class="kw">override fun</span> <span class="fn">onCreate</span>(savedInstanceState: Bundle?) {
+    <span class="kw">super</span>.onCreate(savedInstanceState)
+    setContentView(R.layout.<span class="str">activity_splash</span>)
+    <span class="cm">// Navigate after 2s</span>
+    Handler(Looper.getMainLooper()).postDelayed({
+      startActivity(Intent(<span class="kw">this</span>, LoginActivity::<span class="kw">class</span>.java))
+      finish()
+    }, <span class="num">2000</span>)
+  }
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCREEN 2: LOGIN ===== -->
+    <section class="comic-panel panel-2" data-screen="02">
+      <div class="panel-bg-number">02</div>
+      <div class="panel-inner reverse">
+        <div class="phone-canvas">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen screen-login">
+              <div class="login-header">
+                <div class="wm-icon small">🍉</div>
+                <div class="screen-logo">M3LON</div>
+                <div class="screen-sub">Your Budget Companion</div>
+              </div>
+              <div class="login-form">
+                <div class="field-wrap">
+                  <div class="field-icon">👤</div>
+                  <div class="mock-input">Username / Email</div>
+                </div>
+                <div class="field-wrap">
+                  <div class="field-icon">🔒</div>
+                  <div class="mock-input">Password</div>
+                </div>
+                <div class="remember-row">
+                  <div class="mock-checkbox checked"></div>
+                  <span>Remember Me</span>
+                </div>
+                <div class="btn-primary">LOGIN</div>
+                <div class="btn-link">New user? Register here</div>
+              </div>
+            </div>
+            <div class="phone-home-btn"></div>
+          </div>
+        </div>
+
+        <div class="robot-guide right-guide">
+          <div class="speech-bubble right-bubble">
+            <strong>// SCREEN 02: LOGIN</strong><br/>
+            The <code>LoginActivity</code> uses a <code>ConstraintLayout</code> in XML. Two <code>EditText</code> fields (username + password). The <code>Button</code> onClick calls the Room DB to validate credentials. Passwords are <strong>BCrypt hashed</strong>. "Remember Me" uses <code>SharedPreferences</code> to persist session.
+          </div>
+          <div class="robot small">
+            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right blink"></div><div class="robot-antenna"></div></div>
+            <div class="robot-body small-body"></div>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> activity_login.xml (snippet)</div>
+          <pre><code><span class="tag">&lt;EditText</span>
+  <span class="attr">android:id</span>=<span class="str">"@+id/etUsername"</span>
+  <span class="attr">android:hint</span>=<span class="str">"Username / Email"</span>
+  <span class="attr">android:inputType</span>=<span class="str">"textEmailAddress"</span>
+  <span class="attr">android:drawableStart</span>=<span class="str">"@drawable/ic_user"</span><span class="tag">/&gt;</span>
+
+<span class="tag">&lt;EditText</span>
+  <span class="attr">android:id</span>=<span class="str">"@+id/etPassword"</span>
+  <span class="attr">android:hint</span>=<span class="str">"Password"</span>
+  <span class="attr">android:inputType</span>=<span class="str">"textPassword"</span><span class="tag">/&gt;</span>
+
+<span class="tag">&lt;Button</span>
+  <span class="attr">android:id</span>=<span class="str">"@+id/btnLogin"</span>
+  <span class="attr">android:text</span>=<span class="str">"LOGIN"</span>
+  <span class="attr">android:backgroundTint</span>=<span class="str">"@color/m3lon_teal"</span><span class="tag">/&gt;</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCREEN 3: REGISTER ===== -->
+    <section class="comic-panel panel-3" data-screen="03">
+      <div class="panel-bg-number">03</div>
+      <div class="panel-inner">
+        <div class="robot-guide">
+          <div class="robot small">
+            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
+            <div class="robot-body small-body"></div>
+          </div>
+          <div class="speech-bubble left-bubble">
+            <strong>// SCREEN 03: REGISTRATION</strong><br/>
+            New users tap "Register here" to reach this screen. Fields: Full Name, Email, Username, Password, Confirm Password. A <code>ProgressBar</code> shows password strength in real-time using a <code>TextWatcher</code>. On success, navigate to <code>HomeActivity</code>.
+          </div>
+        </div>
+
+        <div class="phone-canvas">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen screen-register">
+              <div class="login-header compact">
+                <div class="wm-icon small">🍉</div>
+                <div class="screen-logo small-logo">M3LON</div>
+              </div>
+              <div class="register-title">Create an Account</div>
+              <div class="login-form compact-form">
+                <div class="mock-input sm">Full Name</div>
+                <div class="mock-input sm">Email Address</div>
+                <div class="mock-input sm">Username</div>
+                <div class="mock-input sm">Password</div>
+                <div class="pw-strength">
+                  <div class="pw-bar"><div class="pw-fill medium"></div></div>
+                  <span>Medium strength</span>
+                </div>
+                <div class="mock-input sm">Confirm Password</div>
+                <div class="btn-primary sm">REGISTER</div>
+                <div class="btn-link sm">Have an account? Login</div>
+              </div>
+            </div>
+            <div class="phone-home-btn"></div>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> RegisterActivity.kt</div>
+          <pre><code><span class="cm">// Password strength TextWatcher</span>
+etPassword.addTextChangedListener(<span class="kw">object</span> : TextWatcher {
+  <span class="kw">override fun</span> <span class="fn">onTextChanged</span>(s: CharSequence?, ...) {
+    <span class="kw">val</span> strength = <span class="fn">calcStrength</span>(s.toString())
+    pwStrengthBar.progress = strength
+  }
+})
+
+<span class="cm">// Insert user to Room DB</span>
+<span class="kw">val</span> user = <span class="cls">User</span>(name, email, username,
+  BCrypt.hashpw(password, BCrypt.gensalt()))
+userDao.insert(user)</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCREEN 4: HOME DASHBOARD ===== -->
+    <section class="comic-panel panel-4 highlight-panel" data-screen="04">
+      <div class="panel-bg-number">04</div>
+      <div class="panel-label">⭐ CORE SCREEN</div>
+      <div class="panel-inner reverse">
+        <div class="phone-canvas">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen screen-home">
+              <div class="home-header">
+                <div>
+                  <div class="home-greeting">Hello, Alex! 🍉</div>
+                  <div class="home-date">Wednesday, March 23, 2026</div>
+                </div>
+                <div class="avatar-chip">AJ</div>
+              </div>
+
+              <div class="budget-card">
+                <div class="budget-row">
+                  <span class="budget-label">Monthly Budget</span>
+                  <span class="budget-remain">Remaining R350</span>
+                </div>
+                <div class="budget-bar-wrap">
+                  <div class="budget-bar"><div class="budget-fill" style="width:93%"></div></div>
+                </div>
+                <div class="budget-pct">93% used</div>
+              </div>
+
+              <div class="safe-chip">
+                <div class="safe-label">Safe to Spend Today</div>
+                <div class="safe-amount">R26</div>
+                <div class="safe-sub">13 days remaining this month</div>
+              </div>
+
+              <div class="cat-grid-label">Categories</div>
+              <div class="cat-grid">
+                <div class="cat-card">
+                  <div class="cat-icon food">🍔</div>
+                  <div class="cat-name">Food</div>
+                  <div class="cat-ring" style="--pct:80%"><span>80%</span></div>
+                  <div class="cat-remain">R300</div>
+                </div>
+                <div class="cat-card">
+                  <div class="cat-icon transport">🚗</div>
+                  <div class="cat-name">Transport</div>
+                  <div class="cat-ring warn" style="--pct:81%"><span>81%</span></div>
+                  <div class="cat-remain">R150</div>
+                </div>
+                <div class="cat-card over">
+                  <div class="cat-icon shop">🛍️</div>
+                  <div class="cat-name">Shopping</div>
+                  <div class="cat-ring over-ring" style="--pct:100%"><span>100%</span></div>
+                  <div class="cat-remain red-txt">R0</div>
+                </div>
+                <div class="cat-card">
+                  <div class="cat-icon ent">🎬</div>
+                  <div class="cat-name">Entertain</div>
+                  <div class="cat-ring" style="--pct:44%"><span>44%</span></div>
+                  <div class="cat-remain">R180</div>
+                </div>
+              </div>
+
+              <div class="fab-btn">+</div>
+
+              <div class="bottom-nav">
+                <div class="nav-item active">🏠<br/><span>Home</span></div>
+                <div class="nav-item">💰<br/><span>Expenses</span></div>
+                <div class="nav-item">📊<br/><span>Graphs</span></div>
+                <div class="nav-item">📋<br/><span>Budget</span></div>
+                <div class="nav-item">👤<br/><span>Profile</span></div>
+              </div>
+            </div>
+            <div class="phone-home-btn"></div>
+          </div>
+        </div>
+
+        <div class="robot-guide right-guide">
+          <div class="speech-bubble right-bubble big-bubble">
+            <strong>// SCREEN 04: HOME DASHBOARD</strong><br/>
+            The heart of M3LON. Built with a <code>ScrollView</code> containing:<br/>
+            ▸ A custom <code>CardView</code> for budget progress<br/>
+            ▸ A "Safe-to-Spend" widget (<code>TextView</code>)<br/>
+            ▸ A <code>GridLayout</code> (2×N) of category cards, each with a circular <code>ProgressBar</code><br/>
+            ▸ A <code>FloatingActionButton</code> (orange +)<br/>
+            ▸ A <code>BottomNavigationView</code><br/><br/>
+            Overspent categories <strong>glow red</strong> via a Kotlin conditional setting the card background tint.
+          </div>
+          <div class="robot small">
+            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
+            <div class="robot-body small-body excited"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCREEN 5: ADD EXPENSE ===== -->
+    <section class="comic-panel panel-5" data-screen="05">
+      <div class="panel-bg-number">05</div>
+      <div class="panel-inner">
+        <div class="robot-guide">
+          <div class="robot small">
+            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
+            <div class="robot-body small-body"></div>
+          </div>
+          <div class="speech-bubble left-bubble">
+            <strong>// SCREEN 05: ADD / EDIT EXPENSE</strong><br/>
+            Triggered by the FAB (+). Uses a <code>Fragment</code> or new <code>Activity</code>. XML includes: large <code>EditText</code> for amount, <code>DatePickerDialog</code>, a horizontal <code>RecyclerView</code> for categories (chips), and an <code>ImageView</code> for receipt thumbnail. Data saved to <code>Room DB</code> via <code>ViewModel</code>.
+          </div>
+        </div>
+
+        <div class="phone-canvas">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen screen-add">
+              <div class="add-header">
+                <span class="back-btn">‹</span>
+                <span class="add-title">Add Expense</span>
+                <span class="cancel-btn">Cancel</span>
+              </div>
+              <div class="add-amount-wrap">
+                <div class="add-amount-label">Amount</div>
+                <div class="add-amount-field">R 0.00</div>
+              </div>
+              <div class="add-row">
+                <div class="add-field-label">Date</div>
+                <div class="add-field-val">📅 2026/04/15</div>
+              </div>
+              <div class="add-row">
+                <div class="add-field-label">Category</div>
+              </div>
+              <div class="cat-chips">
+                <div class="chip active-chip">🍔 Food</div>
+                <div class="chip">🚗 Transport</div>
+                <div class="chip">🛍️ Shop</div>
+                <div class="chip">🎬 Ent</div>
+                <div class="chip">💊 Health</div>
+              </div>
+              <div class="add-row">
+                <div class="add-field-label">Description</div>
+                <div class="add-desc">What did you spend on?</div>
+              </div>
+              <div class="receipt-section">
+                <div class="receipt-icon">📷</div>
+                <div class="receipt-text">Attach Receipt</div>
+              </div>
+              <div class="btn-primary save-btn">SAVE EXPENSE</div>
+
+              <div class="bottom-nav">
+                <div class="nav-item">🏠<br/><span>Home</span></div>
+                <div class="nav-item active">💰<br/><span>Expenses</span></div>
+                <div class="nav-item">📊<br/><span>Graphs</span></div>
+                <div class="nav-item">📋<br/><span>Budget</span></div>
+                <div class="nav-item">👤<br/><span>Profile</span></div>
+              </div>
+            </div>
+            <div class="phone-home-btn"></div>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> ExpenseEntity.kt (Room)</div>
+          <pre><code><span class="tag">@Entity</span>(tableName = <span class="str">"expenses"</span>)
+<span class="kw">data class</span> <span class="cls">Expense</span>(
+  <span class="tag">@PrimaryKey</span>(autoGenerate = <span class="kw">true</span>)
+  <span class="kw">val</span> id: Int = <span class="num">0</span>,
+  <span class="kw">val</span> amount: Double,
+  <span class="kw">val</span> date: String,
+  <span class="kw">val</span> category: String,
+  <span class="kw">val</span> description: String,
+  <span class="kw">val</span> receiptPath: String? = <span class="kw">null</span>
+)</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCREEN 6: EXPENSE LIST ===== -->
+    <section class="comic-panel panel-6" data-screen="06">
+      <div class="panel-bg-number">06</div>
+      <div class="panel-inner reverse">
+        <div class="phone-canvas">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen screen-list">
+              <div class="list-header">
+                <div class="list-title">Expenses</div>
+                <div class="search-icon">🔍</div>
+              </div>
+              <div class="period-tabs">
+                <div class="period-tab">Week</div>
+                <div class="period-tab active-tab">Month</div>
+                <div class="period-tab">Year</div>
+              </div>
+              <div class="filter-row">▼ Filter &amp; Sort</div>
+              <div class="total-spent">Total Spent <strong>R18 750</strong></div>
+              <div class="exp-list">
+                <div class="exp-item">
+                  <div class="exp-cat-dot" style="background:#4CAF50">🚗</div>
+                  <div class="exp-info">
+                    <div class="exp-desc">Uber to office</div>
+                    <div class="exp-date">Mar 18</div>
+                  </div>
+                  <div class="exp-amount">R85</div>
+                </div>
+                <div class="exp-item">
+                  <div class="exp-cat-dot" style="background:#FF9800">🛍️</div>
+                  <div class="exp-info">
+                    <div class="exp-desc">New shoes</div>
+                    <div class="exp-date">Mar 17 📷</div>
+                  </div>
+                  <div class="exp-amount">R450</div>
+                </div>
+                <div class="exp-item">
+                  <div class="exp-cat-dot" style="background:#2196F3">🎬</div>
+                  <div class="exp-info">
+                    <div class="exp-desc">Movie tickets</div>
+                    <div class="exp-date">Mar 17</div>
+                  </div>
+                  <div class="exp-amount">R120</div>
+                </div>
+                <div class="exp-item">
+                  <div class="exp-cat-dot" style="background:#9C27B0">🍔</div>
+                  <div class="exp-info">
+                    <div class="exp-desc">Grocery run</div>
+                    <div class="exp-date">Mar 18</div>
+                  </div>
+                  <div class="exp-amount">R250</div>
+                </div>
+              </div>
+              <div class="fab-btn">+</div>
+              <div class="bottom-nav">
+                <div class="nav-item">🏠<br/><span>Home</span></div>
+                <div class="nav-item active">💰<br/><span>Expenses</span></div>
+                <div class="nav-item">📊<br/><span>Graphs</span></div>
+                <div class="nav-item">📋<br/><span>Budget</span></div>
+                <div class="nav-item">👤<br/><span>Profile</span></div>
+              </div>
+            </div>
+            <div class="phone-home-btn"></div>
+          </div>
+        </div>
+
+        <div class="robot-guide right-guide">
+          <div class="speech-bubble right-bubble">
+            <strong>// SCREEN 06: EXPENSE LIST</strong><br/>
+            A <code>RecyclerView</code> with a custom <code>ExpenseAdapter</code>. Each row is an XML item layout. Tapping opens <code>EditExpenseActivity</code>. Long-press shows a <code>AlertDialog</code> with "Delete". Search uses <code>Filterable</code> on the adapter. Period tabs trigger Room DB queries with date range filters.
+          </div>
+          <div class="robot small">
+            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
+            <div class="robot-body small-body"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCREEN 7: CATEGORY SUMMARY ===== -->
+    <section class="comic-panel panel-7" data-screen="07">
+      <div class="panel-bg-number">07</div>
+      <div class="panel-inner">
+        <div class="robot-guide">
+          <div class="robot small">
+            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
+            <div class="robot-body small-body"></div>
+          </div>
+          <div class="speech-bubble left-bubble">
+            <strong>// SCREEN 07: CATEGORY SUMMARY</strong><br/>
+            The upper half renders a <strong>Pie Chart</strong> using the <code>MPAndroidChart</code> library — each slice is a category, colour-coded. Below: a <code>RecyclerView</code> list showing total spent vs budget per category. Red highlight via conditional in the <code>Adapter.onBindViewHolder()</code>.
+          </div>
+        </div>
+
+        <div class="phone-canvas">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen screen-summary">
+              <div class="summary-header">
+                <span>‹</span>
+                <span>Category Summary</span>
+                <span>March 2026 ›</span>
+              </div>
+              <div class="pie-chart-mock">
+                <svg viewBox="0 0 100 100" class="pie-svg">
+                  <circle cx="50" cy="50" r="40" fill="none" stroke="#4CAF50" stroke-width="20" stroke-dasharray="80 172" stroke-dashoffset="0"/>
+                  <circle cx="50" cy="50" r="40" fill="none" stroke="#FF9800" stroke-width="20" stroke-dasharray="50 172" stroke-dashoffset="-80"/>
+                  <circle cx="50" cy="50" r="40" fill="none" stroke="#2196F3" stroke-width="20" stroke-dasharray="40 172" stroke-dashoffset="-130"/>
+                  <circle cx="50" cy="50" r="40" fill="none" stroke="#9C27B0" stroke-width="20" stroke-dasharray="30 172" stroke-dashoffset="-170"/>
+                  <text x="50" y="54" text-anchor="middle" font-size="8" fill="white">R18 750</text>
+                </svg>
+                <div class="pie-legend">
+                  <span style="color:#4CAF50">■ Food 35%</span>
+                  <span style="color:#FF9800">■ Transport 29%</span>
+                  <span style="color:#2196F3">■ Shopping 21%</span>
+                  <span style="color:#9C27B0">■ Ent 15%</span>
+                </div>
+              </div>
+              <div class="cat-summary-list">
+                <div class="sum-item">
+                  <div class="sum-icon">🍔</div>
+                  <div class="sum-info">
+                    <div class="sum-name">Food</div>
+                    <div class="sum-bar"><div class="sum-fill" style="width:80%;background:#4CAF50"></div></div>
+                  </div>
+                  <div class="sum-vals">R1,200 / R1,500</div>
+                </div>
+                <div class="sum-item over-item">
+                  <div class="sum-icon">🛍️</div>
+                  <div class="sum-info">
+                    <div class="sum-name">Shopping ⚠️</div>
+                    <div class="sum-bar"><div class="sum-fill" style="width:100%;background:#F44336"></div></div>
+                  </div>
+                  <div class="sum-vals red-txt">R1,200 / R1,000</div>
+                </div>
+              </div>
+              <div class="bottom-nav">
+                <div class="nav-item">🏠</div>
+                <div class="nav-item active">💰</div>
+                <div class="nav-item">📊</div>
+                <div class="nav-item">📋</div>
+                <div class="nav-item">👤</div>
+              </div>
+            </div>
+            <div class="phone-home-btn"></div>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> Gradle dependency</div>
+          <pre><code><span class="cm">// build.gradle (app)</span>
+dependencies {
+  implementation <span class="str">'com.github.PhilJay:MPAndroidChart:v3.1.0'</span>
+}
+
+<span class="cm">// settings.gradle</span>
+maven { url <span class="str">"https://jitpack.io"</span> }</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCREEN 8: GRAPHS ===== -->
+    <section class="comic-panel panel-8" data-screen="08">
+      <div class="panel-bg-number">08</div>
+      <div class="panel-inner reverse">
+        <div class="phone-canvas">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen screen-graphs">
+              <div class="graph-header">Trends &amp; Insights</div>
+              <div class="graph-tabs">
+                <div class="g-tab active-g-tab">Line Graph</div>
+                <div class="g-tab">Bar Graph</div>
+                <div class="g-tab">Month</div>
+                <div class="g-tab">Year</div>
+              </div>
+              <div class="graph-area">
+                <svg viewBox="0 0 200 80" class="line-graph-svg">
+                  <defs>
+                    <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#00BCD4" stop-opacity="0.4"/>
+                      <stop offset="100%" stop-color="#00BCD4" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,60 L20,50 L40,30 L60,45 L80,25 L100,35 L120,20 L140,40 L160,15 L180,30 L200,25" fill="url(#lineGrad)" stroke="#00BCD4" stroke-width="2" fill-opacity="0.3"/>
+                  <path d="M0,60 L20,50 L40,30 L60,45 L80,25 L100,35 L120,20 L140,40 L160,15 L180,30 L200,25" fill="none" stroke="#00BCD4" stroke-width="2"/>
+                  <circle cx="160" cy="15" r="3" fill="#FF6F00"/>
+                  <text x="160" y="10" font-size="6" fill="#FF6F00" text-anchor="middle">R600</text>
+                  <!-- Grid lines -->
+                  <line x1="0" y1="20" x2="200" y2="20" stroke="#ffffff10" stroke-width="0.5"/>
+                  <line x1="0" y1="40" x2="200" y2="40" stroke="#ffffff10" stroke-width="0.5"/>
+                  <line x1="0" y1="60" x2="200" y2="60" stroke="#ffffff10" stroke-width="0.5"/>
+                </svg>
+                <div class="graph-labels">
+                  <span>Mar 1</span><span>Mar 7</span><span>Mar 14</span><span>Mar 21</span><span>Mar 28</span>
+                </div>
+              </div>
+              <div class="graph-summary">
+                <div class="gs-row"><span>Avg Daily Spending</span><span class="gs-val">R396</span></div>
+                <div class="gs-row"><span>Highest Spending Day</span><span class="gs-val red-txt">R600</span></div>
+                <div class="gs-row"><span>Total for Period</span><span class="gs-val">R18,400</span></div>
+              </div>
+              <div class="bottom-nav">
+                <div class="nav-item">🏠</div>
+                <div class="nav-item">💰</div>
+                <div class="nav-item active">📊</div>
+                <div class="nav-item">📋</div>
+                <div class="nav-item">👤</div>
+              </div>
+            </div>
+            <div class="phone-home-btn"></div>
+          </div>
+        </div>
+
+        <div class="robot-guide right-guide">
+          <div class="speech-bubble right-bubble">
+            <strong>// SCREEN 08: GRAPHS / TRENDS</strong><br/>
+            Uses <code>MPAndroidChart</code> <code>LineChart</code> and <code>BarChart</code>. Toggle via a <code>TabLayout</code>. Pinch-to-zoom is enabled with <code>chart.setScaleEnabled(true)</code>. Data fed from Room DB via <code>LiveData</code> observer in the <code>ViewModel</code> — reactive updates automatically redraw the chart.
+          </div>
+          <div class="robot small">
+            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
+            <div class="robot-body small-body"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCREEN 9: BUDGET ===== -->
+    <section class="comic-panel panel-9" data-screen="09">
+      <div class="panel-bg-number">09</div>
+      <div class="panel-inner">
+        <div class="robot-guide">
+          <div class="robot small">
+            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
+            <div class="robot-body small-body"></div>
+          </div>
+          <div class="speech-bubble left-bubble">
+            <strong>// SCREEN 09: BUDGET SETTINGS</strong><br/>
+            A <code>RecyclerView</code> of category rows, each containing an <code>EditText</code> (limit input) and a <code>Switch</code> (enable/disable). Overall budget uses a top-level <code>EditText</code>. "Save All" writes all limits to the Room <code>BudgetGoal</code> table. Limits auto-rollover month-to-month via a date-check in the DAO query.
+          </div>
+        </div>
+
+        <div class="phone-canvas">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen screen-budget">
+              <div class="budget-screen-header">Budget</div>
+              <div class="budget-screen-sub">Set your monthly budget and category limits</div>
+              <div class="overall-budget-card">
+                <div class="ob-label">Overall Monthly Budget</div>
+                <div class="ob-input">R 5,000 🔒</div>
+              </div>
+              <div class="cat-limits-label">Category Limits</div>
+              <div class="cat-limit-list">
+                <div class="cat-limit-row">
+                  <div class="cl-icon">🍔</div>
+                  <div class="cl-name">Food</div>
+                  <div class="cl-input">R 1,500</div>
+                  <div class="cl-switch on"></div>
+                </div>
+                <div class="cat-limit-row">
+                  <div class="cl-icon">🚗</div>
+                  <div class="cl-name">Transport</div>
+                  <div class="cl-input">R 1,500</div>
+                  <div class="cl-switch on"></div>
+                </div>
+                <div class="cat-limit-row">
+                  <div class="cl-icon">🛍️</div>
+                  <div class="cl-name">Shopping</div>
+                  <div class="cl-input">R 1,500</div>
+                  <div class="cl-switch on"></div>
+                </div>
+                <div class="cat-limit-row">
+                  <div class="cl-icon">🎬</div>
+                  <div class="cl-name">Entertain</div>
+                  <div class="cl-input">R 1,500</div>
+                  <div class="cl-switch off"></div>
+                </div>
+              </div>
+              <div class="budget-btns">
+                <div class="btn-primary sm">SAVE ALL</div>
+                <div class="btn-secondary sm">RESET</div>
+              </div>
+              <div class="bottom-nav">
+                <div class="nav-item">🏠</div>
+                <div class="nav-item">💰</div>
+                <div class="nav-item">📊</div>
+                <div class="nav-item active">📋</div>
+                <div class="nav-item">👤</div>
+              </div>
+            </div>
+            <div class="phone-home-btn"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCREEN 10: PROFILE / GAMIFICATION ===== -->
+    <section class="comic-panel panel-10 highlight-panel" data-screen="10">
+      <div class="panel-bg-number">10</div>
+      <div class="panel-label">🏆 GAMIFICATION</div>
+      <div class="panel-inner reverse">
+        <div class="phone-canvas">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen screen-profile">
+              <div class="profile-header">
+                <div class="profile-avatar">AJ</div>
+                <div class="profile-info">
+                  <div class="profile-name">Alex Johnson</div>
+                  <div class="profile-email">alex@email.com</div>
+                </div>
+                <div class="settings-icon">⚙️</div>
+              </div>
+              <div class="xp-section">
+                <div class="xp-level">Level 5 · Budget Apprentice</div>
+                <div class="xp-bar-wrap">
+                  <div class="xp-bar"><div class="xp-fill"></div></div>
+                  <span class="xp-text">1250 XP · 750 to next level</span>
+                </div>
+              </div>
+              <div class="streak-perf">
+                <div class="streak-card">
+                  <div class="streak-num">🔥 12</div>
+                  <div class="streak-label">Day Streak</div>
+                </div>
+                <div class="perf-card">
+                  <div class="perf-num">78%</div>
+                  <div class="perf-label">Performance</div>
+                </div>
+              </div>
+              <div class="badges-label">Badges</div>
+              <div class="badges-grid">
+                <div class="badge earned" title="First Steps">👟</div>
+                <div class="badge earned" title="Week Warrior">⚔️</div>
+                <div class="badge earned" title="Budget Boss">👑</div>
+                <div class="badge earned" title="Penny Pincher">🪙</div>
+                <div class="badge locked" title="Month Streak">🔒</div>
+                <div class="badge locked" title="Category Master">🔒</div>
+              </div>
+              <div class="badges-count">4 of 6 badges collected</div>
+              <div class="bottom-nav">
+                <div class="nav-item">🏠</div>
+                <div class="nav-item">💰</div>
+                <div class="nav-item">📊</div>
+                <div class="nav-item">📋</div>
+                <div class="nav-item active">👤</div>
+              </div>
+            </div>
+            <div class="phone-home-btn"></div>
+          </div>
+        </div>
+
+        <div class="robot-guide right-guide">
+          <div class="speech-bubble right-bubble big-bubble">
+            <strong>// SCREEN 10: PROFILE + GAMIFICATION</strong><br/>
+            M3LON's <strong>KEY DIFFERENTIATOR</strong> — none of the 3 researched apps (Spendee, Wallet, YNAB) have this!<br/><br/>
+            ▸ XP awarded via <code>GamificationManager.kt</code> on each expense save<br/>
+            ▸ Badges stored in Room <code>Badge</code> table, unlocked by trigger conditions<br/>
+            ▸ Streak counter = consecutive days with ≥1 expense logged<br/>
+            ▸ <code>CircularProgressBar</code> custom view for XP bar<br/>
+            ▸ <code>GridLayout</code> for badge display<br/>
+            ▸ Settings menu: Light/Dark/System theme via <code>AppCompatDelegate</code>
+          </div>
+          <div class="robot small excited-robot">
+            <div class="robot-head"><div class="robot-eye left glow-eye"></div><div class="robot-eye right glow-eye"></div><div class="robot-antenna glow-ant"></div></div>
+            <div class="robot-body small-body gold-body"></div>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> GamificationManager.kt</div>
+          <pre><code><span class="kw">object</span> <span class="cls">GamificationManager</span> {
+  <span class="kw">fun</span> <span class="fn">onExpenseLogged</span>(db: AppDatabase) {
+    db.userDao().addXP(<span class="num">10</span>) <span class="cm">// +10 XP per entry</span>
+    db.userDao().incrementStreak()
+    <span class="fn">checkBadges</span>(db)
+  }
+
+  <span class="kw">private fun</span> <span class="fn">checkBadges</span>(db: AppDatabase) {
+    <span class="kw">val</span> user = db.userDao().getUser()
+    <span class="kw">if</span> (user.streak >= <span class="num">7</span>)
+      db.badgeDao().unlock(<span class="str">"WEEK_WARRIOR"</span>)
+    <span class="kw">if</span> (user.xp >= <span class="num">1000</span>)
+      db.badgeDao().unlock(<span class="str">"BUDGET_BOSS"</span>)
+  }
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== NAVIGATION FLOW DIAGRAM ===== -->
+  <section class="flow-section">
+    <div class="flow-title">// APP NAVIGATION FLOW</div>
+    <div class="flow-subtitle">How screens connect in Android Studio via Intents & Navigation Component</div>
+    <div class="flow-diagram" id="flowDiagram">
+      <div class="flow-node splash-node" data-tip="Entry point — 2s delay">01<br/>SPLASH</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node login-node" data-tip="BCrypt auth + SharedPrefs">02<br/>LOGIN</div>
+      <div class="flow-arrow">↕</div>
+      <div class="flow-node reg-node" data-tip="New user registration">03<br/>REGISTER</div>
+      <div class="flow-arrow big-arrow">→</div>
+      <div class="flow-node home-node star-node" data-tip="Central hub">04<br/>HOME 🌟</div>
+      <div class="flow-arrows-group">
+        <div class="flow-arrow down-arrow">↓</div>
+        <div class="flow-nodes-row">
+          <div class="flow-node" data-tip="RecyclerView + Room">05<br/>ADD EXP</div>
+          <div class="flow-node" data-tip="Filterable adapter">06<br/>EXP LIST</div>
+          <div class="flow-node" data-tip="MPAndroidChart pie">07<br/>SUMMARY</div>
+          <div class="flow-node" data-tip="LineChart + BarChart">08<br/>GRAPHS</div>
+          <div class="flow-node" data-tip="Budget goals DAO">09<br/>BUDGET</div>
+          <div class="flow-node gold-node" data-tip="Gamification engine">10<br/>PROFILE 🏆</div>
+        </div>
+      </div>
+    </div>
+    <div class="flow-legend">
+      <span>🟢 Main flow</span>
+      <span>🔵 Bottom nav accessible from all screens</span>
+      <span>🟡 FAB (+) accessible from all screens</span>
+      <span>🏆 M3LON unique feature</span>
+    </div>
+  </section>
+
+  <!-- ===== TECH STACK SECTION ===== -->
+  <section class="tech-section">
+    <div class="tech-title">// TECH STACK · M3LON BUILD</div>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <div class="tech-icon">🤖</div>
+        <div class="tech-name">KOTLIN</div>
+        <div class="tech-desc">Primary language. Coroutines for async DB ops. Extension functions for clean code.</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">📱</div>
+        <div class="tech-name">XML LAYOUTS</div>
+        <div class="tech-desc">ConstraintLayout, LinearLayout, RecyclerView, CardView — all from XML in Android Studio.</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🗄️</div>
+        <div class="tech-name">ROOM / SQLITE</div>
+        <div class="tech-desc">Room Persistence Library wrapping SQLite. DAOs, Entities, TypeConverters, LiveData.</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🎨</div>
+        <div class="tech-name">MATERIAL 3</div>
+        <div class="tech-desc">M3 components: FAB, BottomNavigationView, Chips, CardView, TextInputLayout, Switches.</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">📊</div>
+        <div class="tech-name">MPANDROIDCHART</div>
+        <div class="tech-desc">LineChart, PieChart, BarChart. JitPack dependency. Pinch-to-zoom + tap listeners.</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-icon">🏆</div>
+        <div class="tech-name">GAMIFICATION</div>
+        <div class="tech-desc">Custom GamificationManager singleton. XP, badges, streaks. Room Badge table. M3LON exclusive.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-logo">🍉 M3LON</div>
+    <div class="footer-tagline">SMART BANKING · SLICED SIMPLE</div>
+    <div class="footer-team">
+      The 5 Watermelons · OPSC6311 · March 2026<br/>
+      Zandile · Tshiamo · Muhluri · Matlhogonolo · Ndabezinhle
+    </div>
+    <div class="footer-copy">// Visual Storyboard · Hosted via GitHub Pages</div>
+    <div class="footer-robot">🤖 Built with MELON-BOT guidance</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
