@@ -1,906 +1,955 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M3LON · Visual Storyboard · The 5 Watermelons</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>M3LON · Visual Storyboard · The 5 Watermelons · OPSC6311</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- ===== HERO SECTION ===== -->
-  <header class="hero">
-    <div class="hero-scanlines"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-content">
-      <div class="badge-chip">OPSC6311 · THE 5 WATERMELONS · MARCH 2026</div>
-      <div class="logo-wrap">
-        <div class="logo-icon">🍉</div>
-        <div class="logo-text">
-          <span class="logo-m">M</span><span class="logo-3">3</span><span class="logo-lon">LON</span>
-        </div>
-      </div>
-      <p class="hero-sub">SMART BANKING · SLICED SIMPLE</p>
-      <p class="hero-tagline">// VISUAL STORYBOARD · APP UI GUIDE · ANDROID STUDIO</p>
-
-      <div class="robot-hero">
-        <div class="robot" id="heroRobot">
-          <div class="robot-head">
-            <div class="robot-eye left"></div>
-            <div class="robot-eye right"></div>
-            <div class="robot-mouth"></div>
-            <div class="robot-antenna"></div>
-          </div>
-          <div class="robot-body">
-            <div class="robot-chest-display">M3LON<br/><span>v1.0</span></div>
-          </div>
-          <div class="robot-arms">
-            <div class="robot-arm left">👋</div>
-            <div class="robot-arm right">📱</div>
-          </div>
-        </div>
-        <div class="speech-bubble hero-speech">
-          <span class="type-text">GREETINGS, WATERMELONS! I am <strong>MELON-BOT</strong> — your guide through the M3LON Android app. Each screen below is rendered inside a phone canvas. Scroll to begin your mission! 🚀</span>
-        </div>
-      </div>
-
-      <div class="team-list">
-        <span>ZANDILE SELAO · ST10436981</span>
-        <span>TSHIAMO MOSETLHA · ST10451437</span>
-        <span>MUHLURI NKUNA · ST10437226</span>
-        <span>MATLHOGONOLO KEEBINE · ST10452412</span>
-        <span>NDABEZINHLE MATHUNYANE · ST10457680</span>
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="top-chip">OPSC6311 · THE 5 WATERMELONS · MARCH 2026</div>
+    <div class="logo-block">
+      <div class="hero-wm-icon">🍉</div>
+      <div class="logo-wordmark">
+        <span class="lm">M</span><span class="l3">3</span><span class="ll">LON</span>
       </div>
     </div>
-    <div class="scroll-cue">▼ SCROLL TO EXPLORE ▼</div>
-  </header>
+    <p class="hero-motto">SMART BANKING · SLICED SIMPLE</p>
+    <p class="hero-sub">// VISUAL STORYBOARD · ANDROID STUDIO · KOTLIN + XML</p>
 
-  <!-- ===== TECH SPEC BAR ===== -->
-  <div class="spec-bar">
-    <span>📱 ANDROID STUDIO</span>
-    <span>⚙️ KOTLIN + XML</span>
-    <span>🗄️ SQLITE / ROOM</span>
-    <span>🎨 MATERIAL DESIGN 3</span>
-    <span>🏆 GAMIFICATION ENGINE</span>
-    <span>🤖 AI RECEIPT SCANNER</span>
-    <span>📊 INTERACTIVE GRAPHS</span>
-    <span>📱 ANDROID STUDIO</span>
-    <span>⚙️ KOTLIN + XML</span>
-    <span>🗄️ SQLITE / ROOM</span>
+    <div class="wm-scene">
+      <div class="wm-bot float-wm" id="heroBot">
+        <div class="wm-outer">
+          <div class="wm-inner">
+            <div class="wm-face">
+              <div class="wm-eye we-l"></div>
+              <div class="wm-eye we-r"></div>
+              <div class="wm-mouth"></div>
+            </div>
+            <div class="wm-seeds-row">
+              <div class="wm-seed"></div>
+              <div class="wm-seed"></div>
+              <div class="wm-seed"></div>
+            </div>
+          </div>
+          <div class="wm-arms">
+            <div class="wm-arm wm-arm-l">👋</div>
+            <div class="wm-arm wm-arm-r">📱</div>
+          </div>
+          <div class="wm-legs">
+            <div class="wm-leg"></div>
+            <div class="wm-leg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bubble">
+        <span id="heroText">HELLO WATERMELONS! I am <strong>MELON-BOT</strong> 🍉 — your interactive guide through the M3LON Android app storyboard. Every screen below is rendered inside a phone canvas with the REAL M3LON design colours and layout. This presentation covers Sections 2.1 through 4.10. Scroll to begin your 100-mark journey! 🚀</span>
+      </div>
+    </div>
+
+    <div class="team-chips">
+      <span>ZANDILE SELAO · ST10436981</span>
+      <span>TSHIAMO MOSETLHA · ST10451437</span>
+      <span>MUHLURI NKUNA · ST10437226</span>
+      <span>MATLHOGONOLO KEEBINE · ST10452412</span>
+      <span>NDABEZINHLE MATHUNYANE · ST10457680</span>
+    </div>
+  </div>
+  <div class="scroll-cue">▼ SCROLL TO EXPLORE ▼</div>
+</header>
+
+<!-- TICKER -->
+<div class="ticker-wrap"><div class="ticker-inner">
+  <span>📱 ANDROID STUDIO</span><span>⚙️ KOTLIN + XML</span><span>🗄️ ROOM / SQLITE</span><span>🎨 MATERIAL DESIGN 3</span><span>🏆 GAMIFICATION ENGINE</span><span>🤖 AI RECEIPT SCANNER</span><span>🍉 THE 5 WATERMELONS</span><span>📊 MPANDROIDCHART</span><span>🔐 BCRYPT AUTH</span><span>📱 ANDROID STUDIO</span><span>⚙️ KOTLIN + XML</span><span>🗄️ ROOM / SQLITE</span><span>🎨 MATERIAL DESIGN 3</span><span>🏆 GAMIFICATION ENGINE</span><span>🤖 AI RECEIPT SCANNER</span><span>🍉 THE 5 WATERMELONS</span>
+</div></div>
+
+<!-- ===== SECTION 2: APP OVERVIEW ===== -->
+<section class="doc-section">
+  <div class="sec-label">// SECTION 2 · APP OVERVIEW — M3LON</div>
+
+  <!-- 2.1 -->
+  <div class="panel reveal" id="s21">
+    <div class="pnum">2.1</div>
+    <div class="pbody two-col">
+      <div class="pleft">
+        <div class="sm-wm float-wm-sm"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+        <div class="talk-bub">
+          <div class="bub-label">// 2.1 APP NAME &amp; ICON</div>
+          <p>The name <strong>M3LON</strong> is bold, modern and memorable — inspired by our group name <em>The 5 Watermelons</em>. The stylised <strong>'3'</strong> replacing 'E' gives it a tech-forward, app-native aesthetic — immediately signalling a smart, modern financial tool built for the digital generation.</p>
+          <p style="margin-top:0.5rem">The icon features a <strong>watermelon slice styled as a pie chart</strong> — red segments represent expense categories, the green rind represents savings. Dual symbolism: distinctive and instantly communicative of the app's financial purpose.</p>
+          <div class="drow"><span class="dk">App Name:</span><span class="dv">M3LON</span></div>
+          <div class="drow"><span class="dk">Tagline:</span><span class="dv">Smart Banking · Sliced Simple</span></div>
+          <div class="drow"><span class="dk">Fonts:</span><span class="dv">Syne (headings) + DM Sans (body)</span></div>
+          <div class="drow"><span class="dk">Platform:</span><span class="dv">Android API 29+</span></div>
+          <div class="drow"><span class="dk">IDE:</span><span class="dv">Android Studio (Kotlin + XML)</span></div>
+        </div>
+      </div>
+      <div class="pright center-p">
+        <div class="app-icon-block">
+          <div class="aib-wm">🍉</div>
+          <div class="aib-name"><span class="ai-m">M</span><span class="ai-3">3</span><span class="ai-l">LON</span></div>
+          <div class="aib-tag">SMART BANKING · SLICED SIMPLE</div>
+        </div>
+        <div class="colour-palette">
+          <div class="cp-title">// EXACT BRAND COLOURS (FROM M3LON LOGO PDF)</div>
+          <div class="cp-row">
+            <div class="cp-swatch" style="background:#101010"><span>#101010</span><span>Dark BG</span></div>
+            <div class="cp-swatch" style="background:#1A2E2E"><span>#1A2E2E</span><span>Card BG</span></div>
+            <div class="cp-swatch" style="background:#203030"><span>#203030</span><span>Elevated</span></div>
+            <div class="cp-swatch" style="background:#4ABFAA"><span>#4ABFAA</span><span>Teal Brand</span></div>
+            <div class="cp-swatch" style="background:#70C0A0"><span>#70C0A0</span><span>Teal Light</span></div>
+            <div class="cp-swatch" style="background:#E8635A"><span>#E8635A</span><span>Coral</span></div>
+            <div class="cp-swatch" style="background:#C0392B"><span>#C0392B</span><span>Coral Dark</span></div>
+            <div class="cp-swatch" style="background:#E8B84B"><span>#E8B84B</span><span>Gold XP</span></div>
+            <div class="cp-swatch" style="background:#E8F5F2; border:1px solid #2A3D3D"><span style="color:#101010">#E8F5F2</span><span style="color:#101010">Light BG</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- ===== MAIN STORYBOARD ===== -->
-  <main class="storyboard">
-
-    <!-- ===== SCREEN 1: SPLASH ===== -->
-    <section class="comic-panel panel-1" data-screen="01">
-      <div class="panel-bg-number">01</div>
-      <div class="panel-inner">
-        <div class="robot-guide">
-          <div class="robot small">
-            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
-            <div class="robot-body small-body"></div>
-          </div>
-          <div class="speech-bubble left-bubble">
-            <strong>// SCREEN 01: SPLASH</strong><br/>
-            This is the <em>entry point</em>. The user sees the M3LON watermelon logo on a teal background. In Android Studio, this is an XML layout with a centred <code>ImageView</code> + <code>TextView</code>. The splash delays 2 seconds then navigates to Login via an <code>Intent</code>.
-          </div>
-        </div>
-
-        <div class="phone-canvas">
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen screen-splash">
-              <div class="splash-bg">
-                <div class="splash-dots"></div>
-                <div class="splash-logo-wrap">
-                  <div class="wm-icon">🍉</div>
-                  <div class="splash-title">M3LON</div>
-                  <div class="splash-motto">Smart Banking<br/>Sliced Simple</div>
-                </div>
-                <div class="splash-loading">
-                  <div class="loading-bar"><div class="loading-fill"></div></div>
-                  <span>Initialising...</span>
-                </div>
-              </div>
-            </div>
-            <div class="phone-home-btn"></div>
-          </div>
-        </div>
-
-        <div class="code-block">
-          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> SplashActivity.kt</div>
-          <pre><code><span class="kw">class</span> <span class="cls">SplashActivity</span> : <span class="cls">AppCompatActivity</span>() {
-  <span class="kw">override fun</span> <span class="fn">onCreate</span>(savedInstanceState: Bundle?) {
-    <span class="kw">super</span>.onCreate(savedInstanceState)
-    setContentView(R.layout.<span class="str">activity_splash</span>)
-    <span class="cm">// Navigate after 2s</span>
-    Handler(Looper.getMainLooper()).postDelayed({
-      startActivity(Intent(<span class="kw">this</span>, LoginActivity::<span class="kw">class</span>.java))
-      finish()
-    }, <span class="num">2000</span>)
-  }
-}</code></pre>
+  <!-- 2.2 -->
+  <div class="panel reveal" id="s22">
+    <div class="pnum">2.2</div>
+    <div class="pbody two-col">
+      <div class="pleft">
+        <div class="sm-wm float-wm-sm"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+        <div class="talk-bub">
+          <div class="bub-label">// 2.2 APP DESCRIPTION</div>
+          <p><strong>M3LON</strong> is an Android personal finance application designed to make budgeting approachable, visual, and enjoyable for users of all financial backgrounds. The app allows users to:</p>
+          <ul class="bub-list">
+            <li>Register and log in securely</li>
+            <li>Create and manage expense categories</li>
+            <li>Log and track expenses with optional receipt photos</li>
+            <li>Set monthly budget goals per category</li>
+            <li>View spending analytics through interactive graphs</li>
+            <li>Earn badges and rewards for meeting financial goals</li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <!-- ===== SCREEN 2: LOGIN ===== -->
-    <section class="comic-panel panel-2" data-screen="02">
-      <div class="panel-bg-number">02</div>
-      <div class="panel-inner reverse">
-        <div class="phone-canvas">
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen screen-login">
-              <div class="login-header">
-                <div class="wm-icon small">🍉</div>
-                <div class="screen-logo">M3LON</div>
-                <div class="screen-sub">Your Budget Companion</div>
-              </div>
-              <div class="login-form">
-                <div class="field-wrap">
-                  <div class="field-icon">👤</div>
-                  <div class="mock-input">Username / Email</div>
-                </div>
-                <div class="field-wrap">
-                  <div class="field-icon">🔒</div>
-                  <div class="mock-input">Password</div>
-                </div>
-                <div class="remember-row">
-                  <div class="mock-checkbox checked"></div>
-                  <span>Remember Me</span>
-                </div>
-                <div class="btn-primary">LOGIN</div>
-                <div class="btn-link">New user? Register here</div>
-              </div>
-            </div>
-            <div class="phone-home-btn"></div>
-          </div>
-        </div>
-
-        <div class="robot-guide right-guide">
-          <div class="speech-bubble right-bubble">
-            <strong>// SCREEN 02: LOGIN</strong><br/>
-            The <code>LoginActivity</code> uses a <code>ConstraintLayout</code> in XML. Two <code>EditText</code> fields (username + password). The <code>Button</code> onClick calls the Room DB to validate credentials. Passwords are <strong>BCrypt hashed</strong>. "Remember Me" uses <code>SharedPreferences</code> to persist session.
-          </div>
-          <div class="robot small">
-            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right blink"></div><div class="robot-antenna"></div></div>
-            <div class="robot-body small-body"></div>
-          </div>
-        </div>
-
-        <div class="code-block">
-          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> activity_login.xml (snippet)</div>
-          <pre><code><span class="tag">&lt;EditText</span>
-  <span class="attr">android:id</span>=<span class="str">"@+id/etUsername"</span>
-  <span class="attr">android:hint</span>=<span class="str">"Username / Email"</span>
-  <span class="attr">android:inputType</span>=<span class="str">"textEmailAddress"</span>
-  <span class="attr">android:drawableStart</span>=<span class="str">"@drawable/ic_user"</span><span class="tag">/&gt;</span>
-
-<span class="tag">&lt;EditText</span>
-  <span class="attr">android:id</span>=<span class="str">"@+id/etPassword"</span>
-  <span class="attr">android:hint</span>=<span class="str">"Password"</span>
-  <span class="attr">android:inputType</span>=<span class="str">"textPassword"</span><span class="tag">/&gt;</span>
-
-<span class="tag">&lt;Button</span>
-  <span class="attr">android:id</span>=<span class="str">"@+id/btnLogin"</span>
-  <span class="attr">android:text</span>=<span class="str">"LOGIN"</span>
-  <span class="attr">android:backgroundTint</span>=<span class="str">"@color/m3lon_teal"</span><span class="tag">/&gt;</span></code></pre>
+      <div class="pright">
+        <div class="feat-grid">
+          <div class="feat-card fc-coral"><div class="fc-icon">🏆</div><div class="fc-name">Gamification Engine</div><div class="fc-desc">XP per expense, badges for goals, streaks, leaderboard</div></div>
+          <div class="feat-card fc-teal"><div class="fc-icon">🤖</div><div class="fc-name">AI Receipt Scanner</div><div class="fc-desc">Photo a receipt — AI extracts amount, merchant, date</div></div>
+          <div class="feat-card fc-gold"><div class="fc-icon">💰</div><div class="fc-name">Safe-to-Spend Widget</div><div class="fc-desc">Real-time daily safe-to-spend on home dashboard</div></div>
+          <div class="feat-card fc-coral"><div class="fc-icon">🧠</div><div class="fc-name">Smart Budget Insights</div><div class="fc-desc">Personalised spending pattern analysis and alerts</div></div>
+          <div class="feat-card fc-teal"><div class="fc-icon">🎨</div><div class="fc-name">Category Colour Theming</div><div class="fc-desc">User-customisable colours for each expense category</div></div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- ===== SCREEN 3: REGISTER ===== -->
-    <section class="comic-panel panel-3" data-screen="03">
-      <div class="panel-bg-number">03</div>
-      <div class="panel-inner">
-        <div class="robot-guide">
-          <div class="robot small">
-            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
-            <div class="robot-body small-body"></div>
+  <!-- 2.3 -->
+  <div class="panel reveal" id="s23">
+    <div class="pnum">2.3</div>
+    <div class="pbody">
+      <div class="sm-wm float-wm-sm inline-bot"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+      <div class="talk-bub wide-bub">
+        <div class="bub-label">// 2.3 INNOVATIVE FEATURES — M3LON'S KEY DIFFERENTIATORS</div>
+        <div class="innov-grid">
+          <div class="innov-item">
+            <div class="ii-icon">🏆</div>
+            <div class="ii-title">Gamification Engine</div>
+            <div class="ii-desc">XP per expense logged, weekly/monthly badges, streak counters, optional leaderboard for social comparison. <em>NONE of Spendee, Wallet or YNAB offer this.</em></div>
           </div>
-          <div class="speech-bubble left-bubble">
-            <strong>// SCREEN 03: REGISTRATION</strong><br/>
-            New users tap "Register here" to reach this screen. Fields: Full Name, Email, Username, Password, Confirm Password. A <code>ProgressBar</code> shows password strength in real-time using a <code>TextWatcher</code>. On success, navigate to <code>HomeActivity</code>.
+          <div class="innov-item">
+            <div class="ii-icon">📷</div>
+            <div class="ii-title">AI Receipt Scanner</div>
+            <div class="ii-desc">Uses device camera + AI to extract amount, merchant and date from a photographed receipt — pre-populates the transaction form instantly.</div>
+          </div>
+          <div class="innov-item">
+            <div class="ii-icon">💰</div>
+            <div class="ii-title">Safe-to-Spend Widget</div>
+            <div class="ii-desc">Prominent home screen widget showing real-time 'safe-to-spend' amount for today and the current month.</div>
+          </div>
+          <div class="innov-item">
+            <div class="ii-icon">🧠</div>
+            <div class="ii-title">Smart Budget Insights</div>
+            <div class="ii-desc">App analyses spending patterns and provides personalised, actionable insights (e.g., 'You spend 34% more on food on weekends — consider meal prepping').</div>
+          </div>
+          <div class="innov-item">
+            <div class="ii-icon">🎨</div>
+            <div class="ii-title">Category Colour Theming</div>
+            <div class="ii-desc">Every expense category has a user-customisable colour, making pie charts and graphs visually distinct and deeply personalised.</div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="phone-canvas">
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen screen-register">
-              <div class="login-header compact">
-                <div class="wm-icon small">🍉</div>
-                <div class="screen-logo small-logo">M3LON</div>
-              </div>
-              <div class="register-title">Create an Account</div>
-              <div class="login-form compact-form">
-                <div class="mock-input sm">Full Name</div>
-                <div class="mock-input sm">Email Address</div>
-                <div class="mock-input sm">Username</div>
-                <div class="mock-input sm">Password</div>
-                <div class="pw-strength">
-                  <div class="pw-bar"><div class="pw-fill medium"></div></div>
-                  <span>Medium strength</span>
+<!-- ===== SECTION 3: REQUIREMENTS ===== -->
+<section class="doc-section">
+  <div class="sec-label">// SECTION 3 · DETAILED REQUIREMENTS</div>
+
+  <div class="panel reveal" id="s31">
+    <div class="pnum">3.1 &amp; 3.2</div>
+    <div class="pbody">
+      <div class="sm-wm float-wm-sm inline-bot"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r blink-eye"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+      <div class="talk-bub wide-bub">
+        <div class="bub-label">// 3.1 FUNCTIONAL REQUIREMENTS</div>
+        <div class="fr-grid">
+          <div class="fr-card"><div class="fr-id">FR-01</div><div class="fr-title">User Authentication</div><ul><li>Register: unique username, valid email, password (min 8 chars, 1 number, 1 special char)</li><li>Login with username/email + password</li><li>BCrypt password hashing in SQLite</li><li>'Remember Me' via SharedPreferences</li><li>Logout from main menu</li></ul></div>
+          <div class="fr-card"><div class="fr-id">FR-02</div><div class="fr-title">Expense Category Management</div><ul><li>10+ default categories (Groceries, Entertainment, Transport, Healthcare, Utilities, Dining Out, Education, Clothing, Savings, Other)</li><li>Create custom: name, icon from library, colour</li><li>Edit or delete existing custom categories</li><li>Delete prompts: reassign or delete expenses</li></ul></div>
+          <div class="fr-card"><div class="fr-id">FR-03</div><div class="fr-title">Expense Entry</div><ul><li>Add: Amount, Date, Description, Category, Receipt Photo (optional, camera/gallery)</li><li>Edit any previously entered expense</li><li>Delete with confirmation prompt</li><li>All stored in local SQLite via Room</li><li>Full-screen receipt photo view</li></ul></div>
+          <div class="fr-card"><div class="fr-id">FR-04</div><div class="fr-title">Budget Goal Setting</div><ul><li>Set overall monthly budget (e.g., R5,000/month)</li><li>Set per-category spending limits (e.g., Groceries: R1,200)</li><li>Limits persist month-to-month</li><li>Remaining budget calculated in real-time</li></ul></div>
+          <div class="fr-card"><div class="fr-id">FR-05</div><div class="fr-title">Expense List View</div><ul><li>View by period: Today, Week, Month, Last Month, Year, Custom</li><li>Each item: Date, Category icon (coloured), Description, Amount, Camera icon if receipt</li><li>Tap = edit, Long-press = delete</li><li>Search by description, filter by category</li><li>Sort by date (newest/oldest) or amount</li></ul></div>
+          <div class="fr-card"><div class="fr-id">FR-06</div><div class="fr-title">Category Spending Summary</div><ul><li>Total spent per category over selected period</li><li>Displayed as list AND colour-coded pie chart</li><li>Shows: Category, Total spent, Budget limit, Remaining or overspend</li><li>Exceeded categories highlighted in coral red</li></ul></div>
+          <div class="fr-card"><div class="fr-id">FR-07</div><div class="fr-title">Spending Graphs</div><ul><li>Line graph of daily total spending over user-selectable period</li><li>Category spending as coloured lines or stacked bar chart</li><li>Pinch-to-zoom and pan</li><li>Colour legend per category</li></ul></div>
+          <div class="fr-card"><div class="fr-id">FR-08</div><div class="fr-title">Progress Dashboard</div><ul><li>Overall monthly budget progress bar</li><li>Per-category budget progress bars</li><li>Safe-to-spend amount for current month</li><li>Total spent vs. total budget</li><li>Overspending categories glow coral red with warning icon</li><li>Updates in real-time on every expense add/edit</li></ul></div>
+          <div class="fr-card fr-gold"><div class="fr-id fr-gold-id">FR-09</div><div class="fr-title">Gamification 🏆</div><ul><li>10 XP per expense logged</li><li>Badges: 'First Budget Set', 'Week Streak' (7 consecutive days), 'Budget Boss' (within all budgets for full month), 'Receipt Hoarder' (10 receipt photos)</li><li>Profile page: total XP, level, earned badges, current streak</li><li>Monthly summary screen: budgeting performance score</li></ul></div>
+        </div>
+        <div class="nfr-section">
+          <div class="bub-label" style="margin-top:1.5rem">// 3.2 NON-FUNCTIONAL REQUIREMENTS</div>
+          <div class="nfr-grid">
+            <div class="nfr-item"><span class="nfr-k">Performance</span>All screens load within 2 seconds on mid-range Android 10+</div>
+            <div class="nfr-item"><span class="nfr-k">Usability</span>Follows Material Design 3 throughout</div>
+            <div class="nfr-item"><span class="nfr-k">Data Persistence</span>SQLite via Room Persistence Library — data retained between sessions</div>
+            <div class="nfr-item"><span class="nfr-k">Security</span>Passwords hashed + salted. No financial data to external servers</div>
+            <div class="nfr-item"><span class="nfr-k">Compatibility</span>Android 10 (API Level 29) and above</div>
+            <div class="nfr-item"><span class="nfr-k">Scalability</span>DB schema supports 10,000+ expense entries without performance degradation</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 4: UI SCREENS ===== -->
+<section class="doc-section">
+  <div class="sec-label">// SECTION 4 · USER INTERFACE DESIGN</div>
+
+  <div class="ui-intro-panel">
+    <div class="sm-wm float-wm-sm inline-bot"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+    <div class="talk-bub">
+      <div class="bub-label">// M3LON UI DESIGN PRINCIPLES</div>
+      <p>M3LON follows <strong>Material Design 3</strong> with a <strong>teal-and-coral colour palette</strong>. Dark background <code>#101010</code>, teal brand <code>#4ABFAA</code>, coral accent <code>#E8635A</code>, gold gamification <code>#E8B84B</code>. Frame size: <strong>360×800px</strong> (Android standard). Fonts: <strong>Syne</strong> (headings) + <strong>DM Sans</strong> (body). Each screen is clean, information-dense but not cluttered, and action-oriented.</p>
+    </div>
+  </div>
+
+  <!-- SCREENS 1+2: SPLASH & LOGIN -->
+  <div class="screen-panel reveal" id="sc12">
+    <div class="spanel-badge">SCREEN 1 &amp; 2 · Splash / Login Screen</div>
+    <div class="spanel-body">
+      <div class="screen-info">
+        <div class="sm-wm float-wm-sm"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+        <div class="screen-talk">
+          <div class="st-purpose">Purpose: Authenticate the user before granting access to the app.</div>
+          <ul class="st-list">
+            <li>Displays the M3LON logo (watermelon icon) and app name and motto centred on a teal background</li>
+            <li>Next page: two input fields for Username/Email and Password</li>
+            <li>'Remember Me' checkbox and a 'Login' button (teal, full width)</li>
+            <li>A 'Register' text link below for new users</li>
+            <li>Input validation highlights empty or incorrectly formatted fields in coral red</li>
+          </ul>
+          <div class="cs-block">
+            <div class="cs-head"><span class="d cr"></span><span class="d cy"></span><span class="d cg"></span> SplashActivity.kt</div>
+            <pre>Handler(Looper.getMainLooper()).postDelayed({
+  startActivity(Intent(this,
+    LoginActivity::class.java))
+  finish()
+}, 2000)</pre>
+          </div>
+        </div>
+      </div>
+      <div class="phones-row">
+        <div class="pw"><div class="plbl">Splash</div>
+          <div class="phone"><div class="pnotch"></div>
+            <div class="pscreen ps-splash">
+              <div class="psp-bg"><div class="psp-dots"></div>
+                <div class="psp-center">
+                  <div class="psp-wm">🍉</div>
+                  <div class="psp-name">M3LON</div>
+                  <div class="psp-tag">Smart Banking<br/>Sliced Simple</div>
+                  <div class="psp-btn">Get Started</div>
+                  <div class="psp-link">Have an account? <u>Sign In</u></div>
                 </div>
-                <div class="mock-input sm">Confirm Password</div>
-                <div class="btn-primary sm">REGISTER</div>
-                <div class="btn-link sm">Have an account? Login</div>
               </div>
             </div>
-            <div class="phone-home-btn"></div>
-          </div>
+          <div class="phome"></div></div>
         </div>
+        <div class="pw"><div class="plbl">Login</div>
+          <div class="phone"><div class="pnotch"></div>
+            <div class="pscreen ps-login">
+              <div class="pl-top">
+                <div class="psp-wm sm-wm-icon">🍉</div>
+                <div class="psp-name sm-pname">M3LON</div>
+                <div class="psp-tag sm-ptag">Your Budget Companion</div>
+              </div>
+              <div class="pl-form">
+                <div class="pl-field"><span class="pl-ph">Username/Email</span></div>
+                <div class="pl-field"><span class="pl-ph">Password</span></div>
+                <div class="pl-remember"><div class="pl-chk"></div><span>Remember Me</span></div>
+                <div class="pl-btn">Login</div>
+                <div class="pl-link">New user? <u>Register here</u></div>
+              </div>
+            </div>
+          <div class="phome"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="code-block">
-          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> RegisterActivity.kt</div>
-          <pre><code><span class="cm">// Password strength TextWatcher</span>
-etPassword.addTextChangedListener(<span class="kw">object</span> : TextWatcher {
-  <span class="kw">override fun</span> <span class="fn">onTextChanged</span>(s: CharSequence?, ...) {
-    <span class="kw">val</span> strength = <span class="fn">calcStrength</span>(s.toString())
-    pwStrengthBar.progress = strength
+  <!-- SCREEN 1+3: REGISTER -->
+  <div class="screen-panel reveal" id="sc13">
+    <div class="spanel-badge">SCREEN 1 &amp; 3 · Registration Screen</div>
+    <div class="spanel-body reverse-spanel">
+      <div class="phones-row">
+        <div class="pw"><div class="plbl">Splash</div>
+          <div class="phone"><div class="pnotch"></div>
+            <div class="pscreen ps-splash">
+              <div class="psp-bg"><div class="psp-dots"></div>
+                <div class="psp-center">
+                  <div class="psp-wm">🍉</div><div class="psp-name">M3LON</div>
+                  <div class="psp-tag">Smart Banking<br/>Sliced Simple</div>
+                  <div class="psp-btn">Get Started</div>
+                  <div class="psp-link">Have an account? <u>Sign In</u></div>
+                </div>
+              </div>
+            </div>
+          <div class="phome"></div></div>
+        </div>
+        <div class="pw"><div class="plbl">Register</div>
+          <div class="phone"><div class="pnotch"></div>
+            <div class="pscreen ps-register">
+              <div class="pl-top compact-top">
+                <div class="psp-wm sm-wm-icon">🍉</div>
+                <div class="psp-name sm-pname">M3LON</div>
+                <div class="psp-tag sm-ptag">Your Budget Companion</div>
+              </div>
+              <div class="reg-title-t">Create an Account</div>
+              <div class="pl-form compact-form">
+                <div class="pl-field sm-f"><span class="pl-ph">Full Name</span></div>
+                <div class="pl-field sm-f"><span class="pl-ph">Email Address</span></div>
+                <div class="pl-field sm-f"><span class="pl-ph">Username</span></div>
+                <div class="pl-field sm-f"><span class="pl-ph">Password</span></div>
+                <div class="pw-strength-wrap"><div class="pw-str-bar"><div class="pw-str-fill"></div></div><span class="pw-str-label">Medium strength</span></div>
+                <div class="pl-field sm-f"><span class="pl-ph">Confirm Password</span></div>
+                <div class="pl-btn sm-btn">Register</div>
+                <div class="pl-link sm-link">Have an account? <u>Login</u></div>
+              </div>
+            </div>
+          <div class="phome"></div></div>
+        </div>
+      </div>
+      <div class="screen-info">
+        <div class="sm-wm float-wm-sm"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+        <div class="screen-talk">
+          <div class="st-purpose">Purpose: Allow new users to create an account.</div>
+          <ul class="st-list">
+            <li>On splash, "Get Started" button directs to the registration screen</li>
+            <li>Fields: Full Name, Email Address, Username, Password, Confirm Password</li>
+            <li>Password strength indicator bar updates in real-time as the user types</li>
+            <li>'Register' button submits; successful registration redirects to Home screen</li>
+            <li>A 'Back to Login' link is provided</li>
+          </ul>
+          <div class="cs-block">
+            <div class="cs-head"><span class="d cr"></span><span class="d cy"></span><span class="d cg"></span> RegisterActivity.kt</div>
+            <pre>etPassword.addTextChangedListener(
+  object : TextWatcher {
+    override fun onTextChanged(s: CharSequence?, ...) {
+      pwStrengthBar.progress = calcStrength(s.toString())
+    }
   }
-})
-
-<span class="cm">// Insert user to Room DB</span>
-<span class="kw">val</span> user = <span class="cls">User</span>(name, email, username,
+)
+val user = User(name, email, username,
   BCrypt.hashpw(password, BCrypt.gensalt()))
-userDao.insert(user)</code></pre>
+userDao.insert(user)</pre>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- ===== SCREEN 4: HOME DASHBOARD ===== -->
-    <section class="comic-panel panel-4 highlight-panel" data-screen="04">
-      <div class="panel-bg-number">04</div>
-      <div class="panel-label">⭐ CORE SCREEN</div>
-      <div class="panel-inner reverse">
-        <div class="phone-canvas">
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen screen-home">
-              <div class="home-header">
-                <div>
-                  <div class="home-greeting">Hello, Alex! 🍉</div>
-                  <div class="home-date">Wednesday, March 23, 2026</div>
-                </div>
-                <div class="avatar-chip">AJ</div>
+  <!-- SCREEN 3: HOME -->
+  <div class="screen-panel reveal highlight-sp" id="sc3">
+    <div class="spanel-badge gold-spbadge">SCREEN 3 ⭐ HOME / DASHBOARD — CORE SCREEN</div>
+    <div class="spanel-body">
+      <div class="screen-info">
+        <div class="sm-wm float-wm-sm"><div class="wm-outer sm-outer excited-wm"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+        <div class="screen-talk">
+          <div class="st-purpose">Purpose: Give the user an instant overview of their financial health for the current month.</div>
+          <ul class="st-list">
+            <li><strong>Top:</strong> Greeting with user's name and current date</li>
+            <li><strong>Large card:</strong> Overall monthly budget progress bar (R4,650 / R5,000 spent). Coral gradient — monthly budget card</li>
+            <li><strong>'Safe to Spend' chip:</strong> Displaying remaining daily budget (R26)</li>
+            <li><strong>Category cards grid:</strong> Each category shown as circular progress indicator with icon and remaining amount. Overspent categories glow coral red</li>
+            <li><strong>Quick-add FAB:</strong> Coral '+' button to add expense from any screen</li>
+            <li><strong>Bottom navigation bar:</strong> Home, Expenses, Graphs, Budget, Profile</li>
+          </ul>
+          <div class="cs-block">
+            <div class="cs-head"><span class="d cr"></span><span class="d cy"></span><span class="d cg"></span> activity_home.xml</div>
+            <pre>&lt;FloatingActionButton
+  android:id="@+id/fab"
+  android:backgroundTint="@color/coral"
+  app:srcCompat="@drawable/ic_add"/&gt;
+
+&lt;BottomNavigationView
+  android:id="@+id/bottomNav"
+  app:menu="@menu/bottom_nav"/&gt;</pre>
+          </div>
+        </div>
+      </div>
+      <div class="phones-row">
+        <div class="pw"><div class="plbl">Home Dashboard</div>
+          <div class="phone"><div class="pnotch"></div>
+            <div class="pscreen ps-home">
+              <div class="ph-header">
+                <div><div class="ph-greet">Hello, Alex! 🍉</div><div class="ph-date">Monday, March 23, 2026</div></div>
+                <div class="ph-avatar">AJ</div>
               </div>
-
-              <div class="budget-card">
-                <div class="budget-row">
-                  <span class="budget-label">Monthly Budget</span>
-                  <span class="budget-remain">Remaining R350</span>
-                </div>
-                <div class="budget-bar-wrap">
-                  <div class="budget-bar"><div class="budget-fill" style="width:93%"></div></div>
-                </div>
-                <div class="budget-pct">93% used</div>
+              <div class="ph-budget-card">
+                <div class="phb-row"><span class="phb-lbl">Monthly Budget</span><span class="phb-rem">Remaining R350</span></div>
+                <div class="phb-bar"><div class="phb-fill" style="width:93%"></div></div>
+                <div class="phb-pct">93% used</div>
               </div>
-
-              <div class="safe-chip">
-                <div class="safe-label">Safe to Spend Today</div>
-                <div class="safe-amount">R26</div>
-                <div class="safe-sub">13 days remaining this month</div>
+              <div class="ph-safe">
+                <div class="phs-lbl">Safe to Spend Today</div>
+                <div class="phs-amt">R26</div>
+                <div class="phs-sub">13 days remaining this month</div>
               </div>
-
-              <div class="cat-grid-label">Categories</div>
-              <div class="cat-grid">
-                <div class="cat-card">
-                  <div class="cat-icon food">🍔</div>
-                  <div class="cat-name">Food</div>
-                  <div class="cat-ring" style="--pct:80%"><span>80%</span></div>
-                  <div class="cat-remain">R300</div>
-                </div>
-                <div class="cat-card">
-                  <div class="cat-icon transport">🚗</div>
-                  <div class="cat-name">Transport</div>
-                  <div class="cat-ring warn" style="--pct:81%"><span>81%</span></div>
-                  <div class="cat-remain">R150</div>
-                </div>
-                <div class="cat-card over">
-                  <div class="cat-icon shop">🛍️</div>
-                  <div class="cat-name">Shopping</div>
-                  <div class="cat-ring over-ring" style="--pct:100%"><span>100%</span></div>
-                  <div class="cat-remain red-txt">R0</div>
-                </div>
-                <div class="cat-card">
-                  <div class="cat-icon ent">🎬</div>
-                  <div class="cat-name">Entertain</div>
-                  <div class="cat-ring" style="--pct:44%"><span>44%</span></div>
-                  <div class="cat-remain">R180</div>
-                </div>
+              <div class="ph-cat-lbl">Categories</div>
+              <div class="ph-cat-grid">
+                <div class="ph-cat"><div class="phc-icon" style="background:#2A3D3D">🍔</div><div class="phc-n">Food</div><div class="phc-ring teal-r"><span>80%</span></div><div class="phc-rem">R300</div></div>
+                <div class="ph-cat"><div class="phc-icon" style="background:#2A3D3D">🚗</div><div class="phc-n">Transport</div><div class="phc-ring warn-r"><span>81%</span></div><div class="phc-rem">R150</div></div>
+                <div class="ph-cat over-phcat"><div class="phc-icon" style="background:#3D1A1A">🛍️</div><div class="phc-n">Shopping</div><div class="phc-ring over-r"><span>100%</span></div><div class="phc-rem r-txt">R0</div></div>
+                <div class="ph-cat"><div class="phc-icon" style="background:#2A3D3D">🎬</div><div class="phc-n">Entertain</div><div class="phc-ring teal-r"><span>44%</span></div><div class="phc-rem">R180</div></div>
+                <div class="ph-cat over-phcat"><div class="phc-icon" style="background:#3D1A1A">📋</div><div class="phc-n">Bills</div><div class="phc-ring over-r"><span>100%</span></div><div class="phc-rem r-txt">R0</div></div>
+                <div class="ph-cat"><div class="phc-icon" style="background:#2A3D3D">💊</div><div class="phc-n">Health</div><div class="phc-ring teal-r"><span>45%</span></div><div class="phc-rem">R+</div></div>
               </div>
-
-              <div class="fab-btn">+</div>
-
-              <div class="bottom-nav">
-                <div class="nav-item active">🏠<br/><span>Home</span></div>
-                <div class="nav-item">💰<br/><span>Expenses</span></div>
-                <div class="nav-item">📊<br/><span>Graphs</span></div>
-                <div class="nav-item">📋<br/><span>Budget</span></div>
-                <div class="nav-item">👤<br/><span>Profile</span></div>
-              </div>
+              <div class="ph-fab">+</div>
+              <div class="ph-nav"><div class="phn active-phn">🏠<br/><span>Home</span></div><div class="phn">💰<br/><span>Expenses</span></div><div class="phn">📊<br/><span>Graphs</span></div><div class="phn">📋<br/><span>Budget</span></div><div class="phn">👤<br/><span>Profile</span></div></div>
             </div>
-            <div class="phone-home-btn"></div>
-          </div>
-        </div>
-
-        <div class="robot-guide right-guide">
-          <div class="speech-bubble right-bubble big-bubble">
-            <strong>// SCREEN 04: HOME DASHBOARD</strong><br/>
-            The heart of M3LON. Built with a <code>ScrollView</code> containing:<br/>
-            ▸ A custom <code>CardView</code> for budget progress<br/>
-            ▸ A "Safe-to-Spend" widget (<code>TextView</code>)<br/>
-            ▸ A <code>GridLayout</code> (2×N) of category cards, each with a circular <code>ProgressBar</code><br/>
-            ▸ A <code>FloatingActionButton</code> (orange +)<br/>
-            ▸ A <code>BottomNavigationView</code><br/><br/>
-            Overspent categories <strong>glow red</strong> via a Kotlin conditional setting the card background tint.
-          </div>
-          <div class="robot small">
-            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
-            <div class="robot-body small-body excited"></div>
-          </div>
+          <div class="phome"></div></div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- ===== SCREEN 5: ADD EXPENSE ===== -->
-    <section class="comic-panel panel-5" data-screen="05">
-      <div class="panel-bg-number">05</div>
-      <div class="panel-inner">
-        <div class="robot-guide">
-          <div class="robot small">
-            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
-            <div class="robot-body small-body"></div>
-          </div>
-          <div class="speech-bubble left-bubble">
-            <strong>// SCREEN 05: ADD / EDIT EXPENSE</strong><br/>
-            Triggered by the FAB (+). Uses a <code>Fragment</code> or new <code>Activity</code>. XML includes: large <code>EditText</code> for amount, <code>DatePickerDialog</code>, a horizontal <code>RecyclerView</code> for categories (chips), and an <code>ImageView</code> for receipt thumbnail. Data saved to <code>Room DB</code> via <code>ViewModel</code>.
-          </div>
-        </div>
-
-        <div class="phone-canvas">
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen screen-add">
-              <div class="add-header">
-                <span class="back-btn">‹</span>
-                <span class="add-title">Add Expense</span>
-                <span class="cancel-btn">Cancel</span>
-              </div>
-              <div class="add-amount-wrap">
-                <div class="add-amount-label">Amount</div>
-                <div class="add-amount-field">R 0.00</div>
-              </div>
-              <div class="add-row">
-                <div class="add-field-label">Date</div>
-                <div class="add-field-val">📅 2026/04/15</div>
-              </div>
-              <div class="add-row">
-                <div class="add-field-label">Category</div>
-              </div>
-              <div class="cat-chips">
-                <div class="chip active-chip">🍔 Food</div>
-                <div class="chip">🚗 Transport</div>
-                <div class="chip">🛍️ Shop</div>
-                <div class="chip">🎬 Ent</div>
-                <div class="chip">💊 Health</div>
-              </div>
-              <div class="add-row">
-                <div class="add-field-label">Description</div>
-                <div class="add-desc">What did you spend on?</div>
-              </div>
-              <div class="receipt-section">
-                <div class="receipt-icon">📷</div>
-                <div class="receipt-text">Attach Receipt</div>
-              </div>
-              <div class="btn-primary save-btn">SAVE EXPENSE</div>
-
-              <div class="bottom-nav">
-                <div class="nav-item">🏠<br/><span>Home</span></div>
-                <div class="nav-item active">💰<br/><span>Expenses</span></div>
-                <div class="nav-item">📊<br/><span>Graphs</span></div>
-                <div class="nav-item">📋<br/><span>Budget</span></div>
-                <div class="nav-item">👤<br/><span>Profile</span></div>
-              </div>
+  <!-- SCREEN 4: ADD EXPENSE -->
+  <div class="screen-panel reveal" id="sc4">
+    <div class="spanel-badge">SCREEN 4 · Add / Edit Expense Screen</div>
+    <div class="spanel-body reverse-spanel">
+      <div class="phones-row">
+        <div class="pw"><div class="plbl">Home (FAB active)</div>
+          <div class="phone mini-ph"><div class="pnotch"></div>
+            <div class="pscreen ps-home">
+              <div class="ph-header sm-ph-header"><div class="ph-greet sm-phgreet">Hello, Alex! 🍉</div></div>
+              <div class="ph-budget-card sm-phcard"><div class="phb-row"><span class="phb-lbl">Monthly Budget</span><span class="phb-rem">R350</span></div><div class="phb-bar"><div class="phb-fill" style="width:93%"></div></div></div>
+              <div class="ph-safe sm-phcard"><div class="phs-lbl">Safe to Spend Today</div><div class="phs-amt">R26</div></div>
+              <div class="ph-fab pulse-fab">+</div>
+              <div class="ph-nav mini-nav"><div class="phn active-phn">🏠</div><div class="phn">💰</div><div class="phn">📊</div><div class="phn">📋</div><div class="phn">👤</div></div>
             </div>
-            <div class="phone-home-btn"></div>
-          </div>
+          <div class="phome"></div></div>
         </div>
-
-        <div class="code-block">
-          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> ExpenseEntity.kt (Room)</div>
-          <pre><code><span class="tag">@Entity</span>(tableName = <span class="str">"expenses"</span>)
-<span class="kw">data class</span> <span class="cls">Expense</span>(
-  <span class="tag">@PrimaryKey</span>(autoGenerate = <span class="kw">true</span>)
-  <span class="kw">val</span> id: Int = <span class="num">0</span>,
-  <span class="kw">val</span> amount: Double,
-  <span class="kw">val</span> date: String,
-  <span class="kw">val</span> category: String,
-  <span class="kw">val</span> description: String,
-  <span class="kw">val</span> receiptPath: String? = <span class="kw">null</span>
-)</code></pre>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SCREEN 6: EXPENSE LIST ===== -->
-    <section class="comic-panel panel-6" data-screen="06">
-      <div class="panel-bg-number">06</div>
-      <div class="panel-inner reverse">
-        <div class="phone-canvas">
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen screen-list">
-              <div class="list-header">
-                <div class="list-title">Expenses</div>
-                <div class="search-icon">🔍</div>
+        <div class="pw"><div class="plbl">Add Expense</div>
+          <div class="phone"><div class="pnotch"></div>
+            <div class="pscreen ps-add">
+              <div class="pa-topbar"><span class="pa-back">‹</span><span class="pa-title">Add Expense</span><span class="pa-cancel">Cancel</span></div>
+              <div class="pa-amount-section"><div class="pa-amt-lbl">Amount</div><div class="pa-amt-val">R 0.00</div></div>
+              <div class="pa-row"><span class="pa-lbl">Date</span><span class="pa-val">📅 2026/03/19</span></div>
+              <div class="pa-row"><span class="pa-lbl">Category</span></div>
+              <div class="pa-chips">
+                <div class="pach active-pach">🍔 Food</div>
+                <div class="pach">🚗 Transport</div>
+                <div class="pach">🛍️ Shop</div>
+                <div class="pach">🎬 Ent</div>
+                <div class="pach">💊 Health</div>
               </div>
-              <div class="period-tabs">
-                <div class="period-tab">Week</div>
-                <div class="period-tab active-tab">Month</div>
-                <div class="period-tab">Year</div>
-              </div>
-              <div class="filter-row">▼ Filter &amp; Sort</div>
-              <div class="total-spent">Total Spent <strong>R18 750</strong></div>
-              <div class="exp-list">
-                <div class="exp-item">
-                  <div class="exp-cat-dot" style="background:#4CAF50">🚗</div>
-                  <div class="exp-info">
-                    <div class="exp-desc">Uber to office</div>
-                    <div class="exp-date">Mar 18</div>
-                  </div>
-                  <div class="exp-amount">R85</div>
-                </div>
-                <div class="exp-item">
-                  <div class="exp-cat-dot" style="background:#FF9800">🛍️</div>
-                  <div class="exp-info">
-                    <div class="exp-desc">New shoes</div>
-                    <div class="exp-date">Mar 17 📷</div>
-                  </div>
-                  <div class="exp-amount">R450</div>
-                </div>
-                <div class="exp-item">
-                  <div class="exp-cat-dot" style="background:#2196F3">🎬</div>
-                  <div class="exp-info">
-                    <div class="exp-desc">Movie tickets</div>
-                    <div class="exp-date">Mar 17</div>
-                  </div>
-                  <div class="exp-amount">R120</div>
-                </div>
-                <div class="exp-item">
-                  <div class="exp-cat-dot" style="background:#9C27B0">🍔</div>
-                  <div class="exp-info">
-                    <div class="exp-desc">Grocery run</div>
-                    <div class="exp-date">Mar 18</div>
-                  </div>
-                  <div class="exp-amount">R250</div>
-                </div>
-              </div>
-              <div class="fab-btn">+</div>
-              <div class="bottom-nav">
-                <div class="nav-item">🏠<br/><span>Home</span></div>
-                <div class="nav-item active">💰<br/><span>Expenses</span></div>
-                <div class="nav-item">📊<br/><span>Graphs</span></div>
-                <div class="nav-item">📋<br/><span>Budget</span></div>
-                <div class="nav-item">👤<br/><span>Profile</span></div>
-              </div>
+              <div class="pa-row"><span class="pa-lbl">Description</span></div>
+              <div class="pa-desc">What did you spend on?<br/>What did you spend on?</div>
+              <div class="pa-receipt-row"><span>📷</span><span class="pa-receipt-t">Attach Receipt</span></div>
+              <div class="pa-save-btn">Save Expense</div>
+              <div class="ph-nav"><div class="phn">🏠</div><div class="phn active-phn">💰</div><div class="phn">📊</div><div class="phn">📋</div><div class="phn">👤</div></div>
             </div>
-            <div class="phone-home-btn"></div>
-          </div>
+          <div class="phome"></div></div>
         </div>
-
-        <div class="robot-guide right-guide">
-          <div class="speech-bubble right-bubble">
-            <strong>// SCREEN 06: EXPENSE LIST</strong><br/>
-            A <code>RecyclerView</code> with a custom <code>ExpenseAdapter</code>. Each row is an XML item layout. Tapping opens <code>EditExpenseActivity</code>. Long-press shows a <code>AlertDialog</code> with "Delete". Search uses <code>Filterable</code> on the adapter. Period tabs trigger Room DB queries with date range filters.
-          </div>
-          <div class="robot small">
-            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
-            <div class="robot-body small-body"></div>
+      </div>
+      <div class="screen-info">
+        <div class="sm-wm float-wm-sm"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+        <div class="screen-talk">
+          <div class="st-purpose">Purpose: Allow the user to log or edit an expense entry.</div>
+          <ul class="st-list">
+            <li>Amount field (large, numeric keyboard, prominent at top)</li>
+            <li>Date picker (defaults to today)</li>
+            <li>Category selector (scrollable horizontal chip list with icons and colours)</li>
+            <li>Description text field</li>
+            <li>Attach Receipt button: Opens camera or gallery picker</li>
+            <li>If a photo is attached, thumbnail preview shown with 'X' to remove</li>
+            <li>'Save' button at bottom; 'Cancel' in top app bar</li>
+          </ul>
+          <div class="cs-block">
+            <div class="cs-head"><span class="d cr"></span><span class="d cy"></span><span class="d cg"></span> ExpenseEntity.kt (Room)</div>
+            <pre>@Entity(tableName = "expenses")
+data class Expense(
+  @PrimaryKey(autoGenerate = true)
+  val id: Int = 0,
+  val amount: Double,
+  val date: String,
+  val category: String,
+  val description: String,
+  val receiptPath: String? = null
+)</pre>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- ===== SCREEN 7: CATEGORY SUMMARY ===== -->
-    <section class="comic-panel panel-7" data-screen="07">
-      <div class="panel-bg-number">07</div>
-      <div class="panel-inner">
-        <div class="robot-guide">
-          <div class="robot small">
-            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
-            <div class="robot-body small-body"></div>
-          </div>
-          <div class="speech-bubble left-bubble">
-            <strong>// SCREEN 07: CATEGORY SUMMARY</strong><br/>
-            The upper half renders a <strong>Pie Chart</strong> using the <code>MPAndroidChart</code> library — each slice is a category, colour-coded. Below: a <code>RecyclerView</code> list showing total spent vs budget per category. Red highlight via conditional in the <code>Adapter.onBindViewHolder()</code>.
-          </div>
+  <!-- SCREEN 5: EXPENSE LIST -->
+  <div class="screen-panel reveal" id="sc5">
+    <div class="spanel-badge">SCREEN 5 · Expense List Screen</div>
+    <div class="spanel-body">
+      <div class="screen-info">
+        <div class="sm-wm float-wm-sm"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+        <div class="screen-talk">
+          <div class="st-purpose">Purpose: Show all expenses over a user-selected period.</div>
+          <ul class="st-list">
+            <li>Date range selector at top (presets + custom)</li>
+            <li>Total spent for the selected period below the date selector</li>
+            <li>List items: Category icon (coloured), Date, Description, Amount, Camera icon if receipt attached</li>
+            <li>Tapping entry opens Edit Expense screen</li>
+            <li>Long-pressing shows 'Delete' option</li>
+            <li>Search bar and filter/sort options from top app bar</li>
+          </ul>
+          <div class="four-views-note">📱 4 views shown: Week · Month · Year · Search Results</div>
         </div>
-
-        <div class="phone-canvas">
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen screen-summary">
-              <div class="summary-header">
-                <span>‹</span>
-                <span>Category Summary</span>
-                <span>March 2026 ›</span>
+      </div>
+      <div class="phones-row multi-pr">
+        <div class="pw"><div class="plbl">Week</div>
+          <div class="phone mini-ph"><div class="pnotch"></div>
+            <div class="pscreen ps-list">
+              <div class="pel-header"><span class="pel-title">Expenses</span><span>🔍</span></div>
+              <div class="pel-tabs"><div class="pel-tab active-pelt">Week</div><div class="pel-tab">Month</div><div class="pel-tab">Year</div></div>
+              <div class="pel-filter">▼ Filter &amp; Sort</div>
+              <div class="pel-total">Total Spent <strong>R645</strong></div>
+              <div class="pel-items">
+                <div class="pel-item"><div class="pel-dot" style="background:#4ABFAA">🍔</div><div class="pel-info"><div class="pel-desc">Weekly groceries</div><div class="pel-date">Mar 18</div></div><div class="pel-amt">R250</div></div>
+                <div class="pel-item"><div class="pel-dot" style="background:#70C0A0">🚗</div><div class="pel-info"><div class="pel-desc">Uber to office</div><div class="pel-date">Mar 18</div></div><div class="pel-amt">R85</div></div>
               </div>
-              <div class="pie-chart-mock">
-                <svg viewBox="0 0 100 100" class="pie-svg">
-                  <circle cx="50" cy="50" r="40" fill="none" stroke="#4CAF50" stroke-width="20" stroke-dasharray="80 172" stroke-dashoffset="0"/>
-                  <circle cx="50" cy="50" r="40" fill="none" stroke="#FF9800" stroke-width="20" stroke-dasharray="50 172" stroke-dashoffset="-80"/>
-                  <circle cx="50" cy="50" r="40" fill="none" stroke="#2196F3" stroke-width="20" stroke-dasharray="40 172" stroke-dashoffset="-130"/>
-                  <circle cx="50" cy="50" r="40" fill="none" stroke="#9C27B0" stroke-width="20" stroke-dasharray="30 172" stroke-dashoffset="-170"/>
-                  <text x="50" y="54" text-anchor="middle" font-size="8" fill="white">R18 750</text>
+              <div class="ph-fab sm-fab-p">+</div>
+              <div class="ph-nav mini-nav"><div class="phn">🏠</div><div class="phn active-phn">💰</div><div class="phn">📊</div><div class="phn">📋</div><div class="phn">👤</div></div>
+            </div>
+          <div class="phome"></div></div>
+        </div>
+        <div class="pw"><div class="plbl">Month</div>
+          <div class="phone mini-ph"><div class="pnotch"></div>
+            <div class="pscreen ps-list">
+              <div class="pel-header"><span class="pel-title">Expenses</span><span>🔍</span></div>
+              <div class="pel-tabs"><div class="pel-tab">Week</div><div class="pel-tab active-pelt">Month</div><div class="pel-tab">Year</div></div>
+              <div class="pel-filter">▼ Filter &amp; Sort</div>
+              <div class="pel-total">Total Spent <strong>R18 750</strong></div>
+              <div class="pel-items">
+                <div class="pel-item"><div class="pel-dot" style="background:#70C0A0">🚗</div><div class="pel-info"><div class="pel-desc">Uber to office</div><div class="pel-date">Mar 18</div></div><div class="pel-amt">R85</div></div>
+                <div class="pel-item"><div class="pel-dot" style="background:#4A9E88">🛍️</div><div class="pel-info"><div class="pel-desc">New shoes 📷</div><div class="pel-date">Mar 17</div></div><div class="pel-amt">R450</div></div>
+                <div class="pel-item"><div class="pel-dot" style="background:#4ABFAA">🎬</div><div class="pel-info"><div class="pel-desc">Movie tickets</div><div class="pel-date">Mar 17</div></div><div class="pel-amt">R120</div></div>
+              </div>
+              <div class="ph-fab sm-fab-p">+</div>
+              <div class="ph-nav mini-nav"><div class="phn">🏠</div><div class="phn active-phn">💰</div><div class="phn">📊</div><div class="phn">📋</div><div class="phn">👤</div></div>
+            </div>
+          <div class="phome"></div></div>
+        </div>
+        <div class="pw"><div class="plbl">Year Summary</div>
+          <div class="phone mini-ph"><div class="pnotch"></div>
+            <div class="pscreen ps-list">
+              <div class="pel-header"><span class="pel-title">Expenses</span><span>🔍</span></div>
+              <div class="pel-tabs"><div class="pel-tab">Week</div><div class="pel-tab">Month</div><div class="pel-tab active-pelt">Year</div></div>
+              <div class="pel-total" style="font-size:0.32rem">Yearly Summary 2024<br/><strong>R198 500</strong></div>
+              <div class="year-bars">
+                <div class="yb-item"><span>Food</span><div class="yb-bar"><div class="yb-fill" style="width:42%;background:#4ABFAA"></div></div><span class="yb-val">42%</span></div>
+                <div class="yb-item"><span>Rent</span><div class="yb-bar"><div class="yb-fill" style="width:48%;background:#E8635A"></div></div><span class="yb-val">48%</span></div>
+                <div class="yb-item"><span>Transp</span><div class="yb-bar"><div class="yb-fill" style="width:7%;background:#70C0A0"></div></div><span class="yb-val">7%</span></div>
+                <div class="yb-item"><span>Ent</span><div class="yb-bar"><div class="yb-fill" style="width:1%;background:#E8B84B"></div></div><span class="yb-val">1%</span></div>
+                <div class="yb-item"><span>Other</span><div class="yb-bar"><div class="yb-fill" style="width:1%;background:#4A9E88"></div></div><span class="yb-val">1%</span></div>
+              </div>
+              <div class="ph-nav mini-nav"><div class="phn">🏠</div><div class="phn active-phn">💰</div><div class="phn">📊</div><div class="phn">📋</div><div class="phn">👤</div></div>
+            </div>
+          <div class="phome"></div></div>
+        </div>
+        <div class="pw"><div class="plbl">Search</div>
+          <div class="phone mini-ph"><div class="pnotch"></div>
+            <div class="pscreen ps-list">
+              <div class="pel-header"><span class="pel-title">Expenses</span><span class="search-active-icon">🔍 s</span></div>
+              <div class="pel-tabs"><div class="pel-tab">Week</div><div class="pel-tab active-pelt">Month</div><div class="pel-tab">Year</div></div>
+              <div class="pel-total">2 results for 's'</div>
+              <div class="pel-items">
+                <div class="pel-item"><div class="pel-dot" style="background:#70C0A0">🚗</div><div class="pel-info"><div class="pel-desc">Transport</div><div class="pel-date">Mar 16</div></div><div class="pel-amt">R85</div></div>
+                <div class="pel-item"><div class="pel-dot" style="background:#4A9E88">🛍️</div><div class="pel-info"><div class="pel-desc">Shopping</div><div class="pel-date">Mar 17</div></div><div class="pel-amt">R450</div></div>
+                <div class="pel-item"><div class="pel-dot" style="background:#4ABFAA">🎬</div><div class="pel-info"><div class="pel-desc">Movie tickets</div><div class="pel-date">Mar 17</div></div><div class="pel-amt">R120</div></div>
+                <div class="pel-item"><div class="pel-dot" style="background:#E8B84B">📋</div><div class="pel-info"><div class="pel-desc">Bills</div><div class="pel-date">Mar 15</div></div><div class="pel-amt">R600</div></div>
+              </div>
+              <div class="ph-fab sm-fab-p">+</div>
+              <div class="ph-nav mini-nav"><div class="phn">🏠</div><div class="phn active-phn">💰</div><div class="phn">📊</div><div class="phn">📋</div><div class="phn">👤</div></div>
+            </div>
+          <div class="phome"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 6: CATEGORY SUMMARY -->
+  <div class="screen-panel reveal" id="sc6">
+    <div class="spanel-badge">SCREEN 6 · Category Summary Screen</div>
+    <div class="spanel-body reverse-spanel">
+      <div class="phones-row">
+        <div class="pw"><div class="plbl">Category Summary</div>
+          <div class="phone"><div class="pnotch"></div>
+            <div class="pscreen ps-summary">
+              <div class="psu-header"><span>‹</span><span class="psu-title">Category Summary</span><span>Mar 2026 ›</span></div>
+              <div class="psu-pie-row">
+                <svg viewBox="0 0 90 90" class="psu-pie">
+                  <circle cx="45" cy="45" r="32" fill="none" stroke="#4ABFAA" stroke-width="13" stroke-dasharray="63 138" stroke-dashoffset="0"/>
+                  <circle cx="45" cy="45" r="32" fill="none" stroke="#E8635A" stroke-width="13" stroke-dasharray="40 138" stroke-dashoffset="-63"/>
+                  <circle cx="45" cy="45" r="32" fill="none" stroke="#E8B84B" stroke-width="13" stroke-dasharray="30 138" stroke-dashoffset="-103"/>
+                  <circle cx="45" cy="45" r="32" fill="none" stroke="#70C0A0" stroke-width="13" stroke-dasharray="25 138" stroke-dashoffset="-133"/>
+                  <text x="45" y="48" text-anchor="middle" font-size="6" fill="white" font-weight="bold">R18 750</text>
                 </svg>
-                <div class="pie-legend">
-                  <span style="color:#4CAF50">■ Food 35%</span>
-                  <span style="color:#FF9800">■ Transport 29%</span>
-                  <span style="color:#2196F3">■ Shopping 21%</span>
-                  <span style="color:#9C27B0">■ Ent 15%</span>
+                <div class="psu-legend">
+                  <div class="psu-leg"><span class="psu-dot" style="background:#4ABFAA"></span><span>Food 35%</span></div>
+                  <div class="psu-leg"><span class="psu-dot" style="background:#E8635A"></span><span>Transport 29%</span></div>
+                  <div class="psu-leg"><span class="psu-dot" style="background:#E8B84B"></span><span>Shopping 21%</span></div>
+                  <div class="psu-leg"><span class="psu-dot" style="background:#70C0A0"></span><span>Entertain 15%</span></div>
                 </div>
               </div>
-              <div class="cat-summary-list">
-                <div class="sum-item">
-                  <div class="sum-icon">🍔</div>
-                  <div class="sum-info">
-                    <div class="sum-name">Food</div>
-                    <div class="sum-bar"><div class="sum-fill" style="width:80%;background:#4CAF50"></div></div>
-                  </div>
-                  <div class="sum-vals">R1,200 / R1,500</div>
-                </div>
-                <div class="sum-item over-item">
-                  <div class="sum-icon">🛍️</div>
-                  <div class="sum-info">
-                    <div class="sum-name">Shopping ⚠️</div>
-                    <div class="sum-bar"><div class="sum-fill" style="width:100%;background:#F44336"></div></div>
-                  </div>
-                  <div class="sum-vals red-txt">R1,200 / R1,000</div>
-                </div>
+              <div class="psu-list">
+                <div class="psu-item"><div class="psu-ic">🍔</div><div class="psu-inf"><div class="psu-nm">Food</div><div class="psu-bar"><div class="psu-fill" style="width:80%;background:#4ABFAA"></div></div></div><div class="psu-v">R1,200/R1,500</div></div>
+                <div class="psu-item"><div class="psu-ic">🚗</div><div class="psu-inf"><div class="psu-nm">Transport</div><div class="psu-bar"><div class="psu-fill" style="width:80%;background:#4ABFAA"></div></div></div><div class="psu-v">R1,200/R1,500</div></div>
+                <div class="psu-item psu-over"><div class="psu-ic">🛍️</div><div class="psu-inf"><div class="psu-nm r-txt">Shopping ⚠️</div><div class="psu-bar"><div class="psu-fill" style="width:100%;background:#C0392B"></div></div></div><div class="psu-v r-txt">R1,200/R1,000</div></div>
+                <div class="psu-item"><div class="psu-ic">🎬</div><div class="psu-inf"><div class="psu-nm">Entertainment</div><div class="psu-bar"><div class="psu-fill" style="width:67%;background:#70C0A0"></div></div></div><div class="psu-v">R1,200/R1,800</div></div>
               </div>
-              <div class="bottom-nav">
-                <div class="nav-item">🏠</div>
-                <div class="nav-item active">💰</div>
-                <div class="nav-item">📊</div>
-                <div class="nav-item">📋</div>
-                <div class="nav-item">👤</div>
-              </div>
+              <div class="ph-nav"><div class="phn">🏠</div><div class="phn active-phn">💰</div><div class="phn">📊</div><div class="phn">📋</div><div class="phn">👤</div></div>
             </div>
-            <div class="phone-home-btn"></div>
-          </div>
+          <div class="phome"></div></div>
         </div>
-
-        <div class="code-block">
-          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> Gradle dependency</div>
-          <pre><code><span class="cm">// build.gradle (app)</span>
-dependencies {
-  implementation <span class="str">'com.github.PhilJay:MPAndroidChart:v3.1.0'</span>
+      </div>
+      <div class="screen-info">
+        <div class="sm-wm float-wm-sm"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+        <div class="screen-talk">
+          <div class="st-purpose">Purpose: Show how much was spent per category over a selected period.</div>
+          <ul class="st-list">
+            <li>Date range selector at top</li>
+            <li>Large colour-coded pie chart in upper half of screen (MPAndroidChart PieChart)</li>
+            <li>Below chart: list of all categories — Category icon, name, Total spent, Budget limit, Progress bar (teal = within, red = over)</li>
+            <li>Tapping a category drills down to a filtered expense list for that category</li>
+          </ul>
+          <div class="cs-block">
+            <div class="cs-head"><span class="d cr"></span><span class="d cy"></span><span class="d cg"></span> build.gradle</div>
+            <pre>dependencies {
+  implementation 'com.github.PhilJay:
+    MPAndroidChart:v3.1.0'
 }
-
-<span class="cm">// settings.gradle</span>
-maven { url <span class="str">"https://jitpack.io"</span> }</code></pre>
+// settings.gradle
+maven { url "https://jitpack.io" }</pre>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- ===== SCREEN 8: GRAPHS ===== -->
-    <section class="comic-panel panel-8" data-screen="08">
-      <div class="panel-bg-number">08</div>
-      <div class="panel-inner reverse">
-        <div class="phone-canvas">
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen screen-graphs">
-              <div class="graph-header">Trends &amp; Insights</div>
-              <div class="graph-tabs">
-                <div class="g-tab active-g-tab">Line Graph</div>
-                <div class="g-tab">Bar Graph</div>
-                <div class="g-tab">Month</div>
-                <div class="g-tab">Year</div>
-              </div>
-              <div class="graph-area">
-                <svg viewBox="0 0 200 80" class="line-graph-svg">
-                  <defs>
-                    <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stop-color="#00BCD4" stop-opacity="0.4"/>
-                      <stop offset="100%" stop-color="#00BCD4" stop-opacity="0"/>
-                    </linearGradient>
-                  </defs>
-                  <path d="M0,60 L20,50 L40,30 L60,45 L80,25 L100,35 L120,20 L140,40 L160,15 L180,30 L200,25" fill="url(#lineGrad)" stroke="#00BCD4" stroke-width="2" fill-opacity="0.3"/>
-                  <path d="M0,60 L20,50 L40,30 L60,45 L80,25 L100,35 L120,20 L140,40 L160,15 L180,30 L200,25" fill="none" stroke="#00BCD4" stroke-width="2"/>
-                  <circle cx="160" cy="15" r="3" fill="#FF6F00"/>
-                  <text x="160" y="10" font-size="6" fill="#FF6F00" text-anchor="middle">R600</text>
-                  <!-- Grid lines -->
-                  <line x1="0" y1="20" x2="200" y2="20" stroke="#ffffff10" stroke-width="0.5"/>
-                  <line x1="0" y1="40" x2="200" y2="40" stroke="#ffffff10" stroke-width="0.5"/>
-                  <line x1="0" y1="60" x2="200" y2="60" stroke="#ffffff10" stroke-width="0.5"/>
+  <!-- SCREEN 7: GRAPHS -->
+  <div class="screen-panel reveal" id="sc7">
+    <div class="spanel-badge">SCREEN 7 · Graphs / Trends Screen</div>
+    <div class="spanel-body">
+      <div class="screen-info">
+        <div class="sm-wm float-wm-sm"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+        <div class="screen-talk">
+          <div class="st-purpose">Purpose: Display visual spending trends over time.</div>
+          <ul class="st-list">
+            <li>Date range selector at top</li>
+            <li>Toggle between: Line Graph (daily spending total over time) and Stacked Bar Graph (spending by category per day/week)</li>
+            <li>Graph is interactive: pinch-to-zoom and tap data points to see exact amounts</li>
+            <li>Colour legend below the graph matching categories to colours</li>
+            <li>Below the graph: summary table — average daily spending and highest spending day</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phones-row">
+        <div class="pw"><div class="plbl">Line Graph</div>
+          <div class="phone"><div class="pnotch"></div>
+            <div class="pscreen ps-graphs">
+              <div class="pgr-title">Trends &amp; Insights</div>
+              <div class="pgr-tabs"><div class="pgr-tab active-pgrt">Line Graph</div><div class="pgr-tab">Bar Graph</div><div class="pgr-tab">Month</div><div class="pgr-tab">Year</div></div>
+              <div class="pgr-lbl-sm">Daily Spending Trend</div>
+              <div class="pgr-area">
+                <svg viewBox="0 0 175 60" class="pgr-svg">
+                  <defs><linearGradient id="tg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4ABFAA" stop-opacity="0.3"/><stop offset="100%" stop-color="#4ABFAA" stop-opacity="0"/></linearGradient></defs>
+                  <line x1="0" y1="15" x2="175" y2="15" stroke="#2A3D3D" stroke-width="0.5"/>
+                  <line x1="0" y1="35" x2="175" y2="35" stroke="#2A3D3D" stroke-width="0.5"/>
+                  <line x1="0" y1="50" x2="175" y2="50" stroke="#2A3D3D" stroke-width="0.5"/>
+                  <path d="M0,50 L20,42 L40,26 L60,38 L80,20 L100,30 L120,15 L140,33 L160,10 L175,22" fill="url(#tg1)"/>
+                  <path d="M0,50 L20,42 L40,26 L60,38 L80,20 L100,30 L120,15 L140,33 L160,10 L175,22" fill="none" stroke="#4ABFAA" stroke-width="1.5" stroke-linecap="round"/>
+                  <circle cx="160" cy="10" r="3" fill="#E8635A"/>
+                  <text x="160" y="7" font-size="5" fill="#E8635A" text-anchor="middle">R600</text>
                 </svg>
-                <div class="graph-labels">
-                  <span>Mar 1</span><span>Mar 7</span><span>Mar 14</span><span>Mar 21</span><span>Mar 28</span>
-                </div>
+                <div class="pgr-xlabels"><span>Mar 1</span><span>Mar 7</span><span>Mar 14</span><span>Mar 21</span><span>Mar 28</span></div>
               </div>
-              <div class="graph-summary">
-                <div class="gs-row"><span>Avg Daily Spending</span><span class="gs-val">R396</span></div>
-                <div class="gs-row"><span>Highest Spending Day</span><span class="gs-val red-txt">R600</span></div>
-                <div class="gs-row"><span>Total for Period</span><span class="gs-val">R18,400</span></div>
+              <div class="pgr-summary">
+                <div class="pgrs-row"><span>Avg Daily Spending</span><span class="pgrs-v">R396</span></div>
+                <div class="pgrs-row"><span>Highest Spending Day</span><span class="pgrs-v r-txt">R600</span></div>
+                <div class="pgrs-row"><span>Total for Period</span><span class="pgrs-v">R18,400</span></div>
               </div>
-              <div class="bottom-nav">
-                <div class="nav-item">🏠</div>
-                <div class="nav-item">💰</div>
-                <div class="nav-item active">📊</div>
-                <div class="nav-item">📋</div>
-                <div class="nav-item">👤</div>
-              </div>
+              <div class="ph-fab">+</div>
+              <div class="ph-nav"><div class="phn">🏠</div><div class="phn">💰</div><div class="phn active-phn">📊</div><div class="phn">📋</div><div class="phn">👤</div></div>
             </div>
-            <div class="phone-home-btn"></div>
-          </div>
+          <div class="phome"></div></div>
         </div>
+        <div class="pw"><div class="plbl">Bar Graph</div>
+          <div class="phone"><div class="pnotch"></div>
+            <div class="pscreen ps-graphs">
+              <div class="pgr-title">Trends &amp; Insights</div>
+              <div class="pgr-tabs"><div class="pgr-tab">Line Graph</div><div class="pgr-tab active-pgrt">Bar Graph</div><div class="pgr-tab active-pgrt">Month</div><div class="pgr-tab">Year</div></div>
+              <div class="pgr-lbl-sm">Spending by Category</div>
+              <div class="pgr-area">
+                <svg viewBox="0 0 175 60" class="pgr-svg">
+                  <line x1="0" y1="50" x2="175" y2="50" stroke="#2A3D3D" stroke-width="0.5"/>
+                  <rect x="8" y="28" width="16" height="22" fill="#4ABFAA"/>
+                  <rect x="8" y="16" width="16" height="12" fill="#E8635A"/>
+                  <rect x="8" y="8" width="16" height="8" fill="#E8B84B"/>
+                  <rect x="36" y="22" width="16" height="28" fill="#4ABFAA"/>
+                  <rect x="36" y="14" width="16" height="8" fill="#E8635A"/>
+                  <rect x="64" y="18" width="16" height="32" fill="#4ABFAA"/>
+                  <rect x="64" y="10" width="16" height="8" fill="#70C0A0"/>
+                  <rect x="92" y="24" width="16" height="26" fill="#4ABFAA"/>
+                  <rect x="92" y="16" width="16" height="8" fill="#E8635A"/>
+                  <rect x="120" y="12" width="16" height="38" fill="#4ABFAA"/>
+                  <rect x="120" y="6" width="16" height="6" fill="#E8B84B"/>
+                </svg>
+                <div class="pgr-xlabels"><span>Mar 12</span><span>Mar 14</span><span>Mar 15</span><span>Mar 17</span><span>Mar 18</span></div>
+                <div class="pgr-legend"><span style="color:#4ABFAA">■ Food</span><span style="color:#E8635A">■ Transport</span><span style="color:#E8B84B">■ Shopping</span><span style="color:#70C0A0">■ Ent</span></div>
+              </div>
+              <div class="pgr-summary">
+                <div class="pgrs-row"><span>Avg Daily Spending</span><span class="pgrs-v">R396</span></div>
+                <div class="pgrs-row"><span>Total for Period</span><span class="pgrs-v">R18,400</span></div>
+              </div>
+              <div class="ph-fab">+</div>
+              <div class="ph-nav"><div class="phn">🏠</div><div class="phn">💰</div><div class="phn active-phn">📊</div><div class="phn">📋</div><div class="phn">👤</div></div>
+            </div>
+          <div class="phome"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="robot-guide right-guide">
-          <div class="speech-bubble right-bubble">
-            <strong>// SCREEN 08: GRAPHS / TRENDS</strong><br/>
-            Uses <code>MPAndroidChart</code> <code>LineChart</code> and <code>BarChart</code>. Toggle via a <code>TabLayout</code>. Pinch-to-zoom is enabled with <code>chart.setScaleEnabled(true)</code>. Data fed from Room DB via <code>LiveData</code> observer in the <code>ViewModel</code> — reactive updates automatically redraw the chart.
-          </div>
-          <div class="robot small">
-            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
-            <div class="robot-body small-body"></div>
+  <!-- SCREEN 8: BUDGET -->
+  <div class="screen-panel reveal" id="sc8">
+    <div class="spanel-badge">SCREEN 8 · Budget Screen</div>
+    <div class="spanel-body reverse-spanel">
+      <div class="phones-row">
+        <div class="pw"><div class="plbl">Budget Settings</div>
+          <div class="phone"><div class="pnotch"></div>
+            <div class="pscreen ps-budget">
+              <div class="pbu-title">Budget</div>
+              <div class="pbu-sub">Set your monthly budget and category limits</div>
+              <div class="pbu-overall"><div class="pbu-ov-lbl">Overall Monthly Budget</div><div class="pbu-ov-val">R 5000 🔒</div></div>
+              <div class="pbu-cat-lbl">Category Limits</div>
+              <div class="pbu-list">
+                <div class="pbu-row"><div class="pbu-ic">🍔</div><div class="pbu-nm">Food</div><div class="pbu-inp">R 1,500</div><div class="pbu-sw on-psw"></div></div>
+                <div class="pbu-row"><div class="pbu-ic">🚗</div><div class="pbu-nm">Transport</div><div class="pbu-inp">R 1,500</div><div class="pbu-sw on-psw"></div></div>
+                <div class="pbu-row"><div class="pbu-ic">🛍️</div><div class="pbu-nm">Shopping</div><div class="pbu-inp">R 1,500</div><div class="pbu-sw on-psw"></div></div>
+                <div class="pbu-row"><div class="pbu-ic">🎬</div><div class="pbu-nm">Entertain</div><div class="pbu-inp">R 1,500</div><div class="pbu-sw off-psw"></div></div>
+              </div>
+              <div class="pbu-add">+</div>
+              <div class="pbu-btns"><div class="pbu-save">Save All</div><div class="pbu-reset">Reset to Default</div></div>
+              <div class="ph-nav"><div class="phn">🏠</div><div class="phn">💰</div><div class="phn">📊</div><div class="phn active-phn">📋</div><div class="phn">👤</div></div>
+            </div>
+          <div class="phome"></div></div>
+        </div>
+      </div>
+      <div class="screen-info">
+        <div class="sm-wm float-wm-sm"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+        <div class="screen-talk">
+          <div class="st-purpose">Purpose: Allow users to set and manage monthly budget goals.</div>
+          <ul class="st-list">
+            <li>Overall monthly budget input field at the top</li>
+            <li>List of all categories, each with an editable budget limit input field</li>
+            <li>A toggle to enable/disable a budget limit for each category</li>
+            <li>'Save All' button at the bottom saves all changes at once</li>
+            <li>'Reset to Default' option clears all limits</li>
+          </ul>
+          <div class="cs-block">
+            <div class="cs-head"><span class="d cr"></span><span class="d cy"></span><span class="d cg"></span> BudgetDao.kt</div>
+            <pre>@Dao
+interface BudgetDao {
+  @Upsert
+  suspend fun setBudget(goal: BudgetGoal)
+
+  @Query("SELECT * FROM budget_goals
+    WHERE category = :cat")
+  fun getBudget(cat: String): Flow&lt;BudgetGoal&gt;
+}</pre>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- ===== SCREEN 9: BUDGET ===== -->
-    <section class="comic-panel panel-9" data-screen="09">
-      <div class="panel-bg-number">09</div>
-      <div class="panel-inner">
-        <div class="robot-guide">
-          <div class="robot small">
-            <div class="robot-head"><div class="robot-eye left"></div><div class="robot-eye right"></div><div class="robot-antenna"></div></div>
-            <div class="robot-body small-body"></div>
-          </div>
-          <div class="speech-bubble left-bubble">
-            <strong>// SCREEN 09: BUDGET SETTINGS</strong><br/>
-            A <code>RecyclerView</code> of category rows, each containing an <code>EditText</code> (limit input) and a <code>Switch</code> (enable/disable). Overall budget uses a top-level <code>EditText</code>. "Save All" writes all limits to the Room <code>BudgetGoal</code> table. Limits auto-rollover month-to-month via a date-check in the DAO query.
-          </div>
-        </div>
-
-        <div class="phone-canvas">
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen screen-budget">
-              <div class="budget-screen-header">Budget</div>
-              <div class="budget-screen-sub">Set your monthly budget and category limits</div>
-              <div class="overall-budget-card">
-                <div class="ob-label">Overall Monthly Budget</div>
-                <div class="ob-input">R 5,000 🔒</div>
-              </div>
-              <div class="cat-limits-label">Category Limits</div>
-              <div class="cat-limit-list">
-                <div class="cat-limit-row">
-                  <div class="cl-icon">🍔</div>
-                  <div class="cl-name">Food</div>
-                  <div class="cl-input">R 1,500</div>
-                  <div class="cl-switch on"></div>
-                </div>
-                <div class="cat-limit-row">
-                  <div class="cl-icon">🚗</div>
-                  <div class="cl-name">Transport</div>
-                  <div class="cl-input">R 1,500</div>
-                  <div class="cl-switch on"></div>
-                </div>
-                <div class="cat-limit-row">
-                  <div class="cl-icon">🛍️</div>
-                  <div class="cl-name">Shopping</div>
-                  <div class="cl-input">R 1,500</div>
-                  <div class="cl-switch on"></div>
-                </div>
-                <div class="cat-limit-row">
-                  <div class="cl-icon">🎬</div>
-                  <div class="cl-name">Entertain</div>
-                  <div class="cl-input">R 1,500</div>
-                  <div class="cl-switch off"></div>
-                </div>
-              </div>
-              <div class="budget-btns">
-                <div class="btn-primary sm">SAVE ALL</div>
-                <div class="btn-secondary sm">RESET</div>
-              </div>
-              <div class="bottom-nav">
-                <div class="nav-item">🏠</div>
-                <div class="nav-item">💰</div>
-                <div class="nav-item">📊</div>
-                <div class="nav-item active">📋</div>
-                <div class="nav-item">👤</div>
-              </div>
-            </div>
-            <div class="phone-home-btn"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SCREEN 10: PROFILE / GAMIFICATION ===== -->
-    <section class="comic-panel panel-10 highlight-panel" data-screen="10">
-      <div class="panel-bg-number">10</div>
-      <div class="panel-label">🏆 GAMIFICATION</div>
-      <div class="panel-inner reverse">
-        <div class="phone-canvas">
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen screen-profile">
-              <div class="profile-header">
-                <div class="profile-avatar">AJ</div>
-                <div class="profile-info">
-                  <div class="profile-name">Alex Johnson</div>
-                  <div class="profile-email">alex@email.com</div>
-                </div>
-                <div class="settings-icon">⚙️</div>
-              </div>
-              <div class="xp-section">
-                <div class="xp-level">Level 5 · Budget Apprentice</div>
-                <div class="xp-bar-wrap">
-                  <div class="xp-bar"><div class="xp-fill"></div></div>
-                  <span class="xp-text">1250 XP · 750 to next level</span>
-                </div>
-              </div>
-              <div class="streak-perf">
-                <div class="streak-card">
-                  <div class="streak-num">🔥 12</div>
-                  <div class="streak-label">Day Streak</div>
-                </div>
-                <div class="perf-card">
-                  <div class="perf-num">78%</div>
-                  <div class="perf-label">Performance</div>
-                </div>
-              </div>
-              <div class="badges-label">Badges</div>
-              <div class="badges-grid">
-                <div class="badge earned" title="First Steps">👟</div>
-                <div class="badge earned" title="Week Warrior">⚔️</div>
-                <div class="badge earned" title="Budget Boss">👑</div>
-                <div class="badge earned" title="Penny Pincher">🪙</div>
-                <div class="badge locked" title="Month Streak">🔒</div>
-                <div class="badge locked" title="Category Master">🔒</div>
-              </div>
-              <div class="badges-count">4 of 6 badges collected</div>
-              <div class="bottom-nav">
-                <div class="nav-item">🏠</div>
-                <div class="nav-item">💰</div>
-                <div class="nav-item">📊</div>
-                <div class="nav-item">📋</div>
-                <div class="nav-item active">👤</div>
-              </div>
-            </div>
-            <div class="phone-home-btn"></div>
-          </div>
-        </div>
-
-        <div class="robot-guide right-guide">
-          <div class="speech-bubble right-bubble big-bubble">
-            <strong>// SCREEN 10: PROFILE + GAMIFICATION</strong><br/>
-            M3LON's <strong>KEY DIFFERENTIATOR</strong> — none of the 3 researched apps (Spendee, Wallet, YNAB) have this!<br/><br/>
-            ▸ XP awarded via <code>GamificationManager.kt</code> on each expense save<br/>
-            ▸ Badges stored in Room <code>Badge</code> table, unlocked by trigger conditions<br/>
-            ▸ Streak counter = consecutive days with ≥1 expense logged<br/>
-            ▸ <code>CircularProgressBar</code> custom view for XP bar<br/>
-            ▸ <code>GridLayout</code> for badge display<br/>
-            ▸ Settings menu: Light/Dark/System theme via <code>AppCompatDelegate</code>
-          </div>
-          <div class="robot small excited-robot">
-            <div class="robot-head"><div class="robot-eye left glow-eye"></div><div class="robot-eye right glow-eye"></div><div class="robot-antenna glow-ant"></div></div>
-            <div class="robot-body small-body gold-body"></div>
-          </div>
-        </div>
-
-        <div class="code-block">
-          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> GamificationManager.kt</div>
-          <pre><code><span class="kw">object</span> <span class="cls">GamificationManager</span> {
-  <span class="kw">fun</span> <span class="fn">onExpenseLogged</span>(db: AppDatabase) {
-    db.userDao().addXP(<span class="num">10</span>) <span class="cm">// +10 XP per entry</span>
+  <!-- SCREEN 9: PROFILE / GAMIFICATION -->
+  <div class="screen-panel reveal highlight-sp" id="sc9">
+    <div class="spanel-badge gold-spbadge">SCREEN 9 🏆 Profile / Gamification Screen / Settings</div>
+    <div class="spanel-body">
+      <div class="screen-info">
+        <div class="sm-wm float-wm-sm"><div class="wm-outer sm-outer excited-wm"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+        <div class="screen-talk">
+          <div class="st-purpose">Purpose: Display user account details and gamification progress.</div>
+          <ul class="st-list">
+            <li>User avatar (initials-based), username, email at the top</li>
+            <li><strong>XP Bar:</strong> Current XP, level title (e.g., 'Budget Apprentice'), progress to next level</li>
+            <li><strong>Current Streak counter:</strong> Flame icon + number of consecutive days logged</li>
+            <li><strong>Badges Grid:</strong> Earned badges as coloured icons; unearned badges as greyed-out outlines</li>
+            <li><strong>Monthly Performance Score:</strong> % score — how well user stayed within budget last month</li>
+            <li><strong>Settings Menu:</strong> Account management, Notifications, Data Import, Support</li>
+            <li><strong>Appearance:</strong> Light Mode / Dark Mode / System via popup</li>
+            <li><strong>Logout:</strong> Clear button at bottom of Settings</li>
+          </ul>
+          <div class="cs-block">
+            <div class="cs-head"><span class="d cr"></span><span class="d cy"></span><span class="d cg"></span> GamificationManager.kt</div>
+            <pre>object GamificationManager {
+  fun onExpenseLogged(db: AppDatabase) {
+    db.userDao().addXP(10)
     db.userDao().incrementStreak()
-    <span class="fn">checkBadges</span>(db)
+    checkBadges(db)
   }
-
-  <span class="kw">private fun</span> <span class="fn">checkBadges</span>(db: AppDatabase) {
-    <span class="kw">val</span> user = db.userDao().getUser()
-    <span class="kw">if</span> (user.streak >= <span class="num">7</span>)
-      db.badgeDao().unlock(<span class="str">"WEEK_WARRIOR"</span>)
-    <span class="kw">if</span> (user.xp >= <span class="num">1000</span>)
-      db.badgeDao().unlock(<span class="str">"BUDGET_BOSS"</span>)
+  private fun checkBadges(db: AppDatabase) {
+    val u = db.userDao().getUser()
+    if (u.streak >= 7)
+      db.badgeDao().unlock("WEEK_WARRIOR")
+    if (u.xp >= 1000)
+      db.badgeDao().unlock("BUDGET_BOSS")
   }
-}</code></pre>
+}</pre>
+          </div>
         </div>
       </div>
-    </section>
-
-  </main>
-
-  <!-- ===== NAVIGATION FLOW DIAGRAM ===== -->
-  <section class="flow-section">
-    <div class="flow-title">// APP NAVIGATION FLOW</div>
-    <div class="flow-subtitle">How screens connect in Android Studio via Intents & Navigation Component</div>
-    <div class="flow-diagram" id="flowDiagram">
-      <div class="flow-node splash-node" data-tip="Entry point — 2s delay">01<br/>SPLASH</div>
-      <div class="flow-arrow">→</div>
-      <div class="flow-node login-node" data-tip="BCrypt auth + SharedPrefs">02<br/>LOGIN</div>
-      <div class="flow-arrow">↕</div>
-      <div class="flow-node reg-node" data-tip="New user registration">03<br/>REGISTER</div>
-      <div class="flow-arrow big-arrow">→</div>
-      <div class="flow-node home-node star-node" data-tip="Central hub">04<br/>HOME 🌟</div>
-      <div class="flow-arrows-group">
-        <div class="flow-arrow down-arrow">↓</div>
-        <div class="flow-nodes-row">
-          <div class="flow-node" data-tip="RecyclerView + Room">05<br/>ADD EXP</div>
-          <div class="flow-node" data-tip="Filterable adapter">06<br/>EXP LIST</div>
-          <div class="flow-node" data-tip="MPAndroidChart pie">07<br/>SUMMARY</div>
-          <div class="flow-node" data-tip="LineChart + BarChart">08<br/>GRAPHS</div>
-          <div class="flow-node" data-tip="Budget goals DAO">09<br/>BUDGET</div>
-          <div class="flow-node gold-node" data-tip="Gamification engine">10<br/>PROFILE 🏆</div>
+      <div class="phones-row">
+        <div class="pw"><div class="plbl">Profile</div>
+          <div class="phone"><div class="pnotch"></div>
+            <div class="pscreen ps-profile">
+              <div class="ppr-top"><div class="ppr-av">AJ</div><div class="ppr-info"><div class="ppr-name">Alex Janson</div><div class="ppr-email">Alex.janson@gmail.com</div></div><div class="ppr-settings-icon">⚙️ Settings</div></div>
+              <div class="ppr-level-lbl">Level 5</div>
+              <div class="ppr-level-title">Budget Apprentice</div>
+              <div class="ppr-xp-bar-wrap"><div class="ppr-xp-bar"><div class="ppr-xp-fill"></div></div><span class="ppr-xp-text">1250 XP · 750 to next level</span></div>
+              <div class="ppr-stats-row">
+                <div class="ppr-stat"><div class="ppr-stat-icon">🔥</div><div class="ppr-stat-val">12</div><div class="ppr-stat-lbl">Day Streak</div></div>
+                <div class="ppr-stat"><div class="ppr-stat-icon">📊</div><div class="ppr-stat-val">78%</div><div class="ppr-stat-lbl">Performance</div></div>
+              </div>
+              <div class="ppr-badges-lbl">Badges</div>
+              <div class="ppr-badges">
+                <div class="ppr-badge earned-pb" title="First Steps">👟</div>
+                <div class="ppr-badge earned-pb" title="Week Warrior">⚔️</div>
+                <div class="ppr-badge earned-pb" title="Budget Boss">👑</div>
+                <div class="ppr-badge earned-pb" title="Penny Pincher">🪙</div>
+                <div class="ppr-badge locked-pb">🔒</div>
+                <div class="ppr-badge locked-pb">🔒</div>
+              </div>
+              <div class="ppr-count">4 of 6 badges collected</div>
+              <div class="ph-nav"><div class="phn">🏠</div><div class="phn">💰</div><div class="phn">📊</div><div class="phn">📋</div><div class="phn active-phn">👤</div></div>
+            </div>
+          <div class="phome"></div></div>
+        </div>
+        <div class="pw"><div class="plbl">Settings</div>
+          <div class="phone"><div class="pnotch"></div>
+            <div class="pscreen ps-settings">
+              <div class="pse-title">Settings</div>
+              <div class="pse-av-row"><div class="ppr-av sm-pav">AJ</div><div><div class="ppr-name">Alex Johnson</div><div class="ppr-email">alex.johnson@email.com</div></div></div>
+              <div class="pse-menu">
+                <div class="pse-item">👤 Account<span class="pse-arr">›</span></div>
+                <div class="pse-item">🎨 Appearance<span class="pse-arr">›</span></div>
+                <div class="pse-item">📥 Import<span class="pse-arr">›</span></div>
+                <div class="pse-item">⚙️ Preferences<span class="pse-arr">›</span></div>
+                <div class="pse-item">🔔 Notifications<span class="pse-arr">›</span></div>
+                <div class="pse-item">❓ Support<span class="pse-arr">›</span></div>
+              </div>
+              <div class="pse-theme">
+                <div class="pse-theme-title">Theme Preference ×</div>
+                <div class="pse-th active-pth">☀️ Light — Light theme for day use ✓</div>
+                <div class="pse-th">🌙 Dark — Dark theme for night use</div>
+                <div class="pse-th">📱 System — Match system preference</div>
+              </div>
+              <div class="pse-logout">↪ Logout</div>
+              <div class="ph-nav"><div class="phn">🏠</div><div class="phn">💰</div><div class="phn">📊</div><div class="phn">📋</div><div class="phn active-phn">👤</div></div>
+            </div>
+          <div class="phome"></div></div>
         </div>
       </div>
     </div>
-    <div class="flow-legend">
-      <span>🟢 Main flow</span>
-      <span>🔵 Bottom nav accessible from all screens</span>
-      <span>🟡 FAB (+) accessible from all screens</span>
-      <span>🏆 M3LON unique feature</span>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== TECH STACK SECTION ===== -->
-  <section class="tech-section">
-    <div class="tech-title">// TECH STACK · M3LON BUILD</div>
-    <div class="tech-grid">
-      <div class="tech-card">
-        <div class="tech-icon">🤖</div>
-        <div class="tech-name">KOTLIN</div>
-        <div class="tech-desc">Primary language. Coroutines for async DB ops. Extension functions for clean code.</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">📱</div>
-        <div class="tech-name">XML LAYOUTS</div>
-        <div class="tech-desc">ConstraintLayout, LinearLayout, RecyclerView, CardView — all from XML in Android Studio.</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🗄️</div>
-        <div class="tech-name">ROOM / SQLITE</div>
-        <div class="tech-desc">Room Persistence Library wrapping SQLite. DAOs, Entities, TypeConverters, LiveData.</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🎨</div>
-        <div class="tech-name">MATERIAL 3</div>
-        <div class="tech-desc">M3 components: FAB, BottomNavigationView, Chips, CardView, TextInputLayout, Switches.</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">📊</div>
-        <div class="tech-name">MPANDROIDCHART</div>
-        <div class="tech-desc">LineChart, PieChart, BarChart. JitPack dependency. Pinch-to-zoom + tap listeners.</div>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🏆</div>
-        <div class="tech-name">GAMIFICATION</div>
-        <div class="tech-desc">Custom GamificationManager singleton. XP, badges, streaks. Room Badge table. M3LON exclusive.</div>
+<!-- ===== APP PROCESS + 4.10 NAV ===== -->
+<section class="doc-section nav-sec">
+  <div class="sec-label">// APP PROCESS &amp; SECTION 4.10 · NAVIGATION DIAGRAM</div>
+
+  <div class="panel reveal" id="s410">
+    <div class="pbody">
+      <div class="sm-wm float-wm-sm inline-bot"><div class="wm-outer sm-outer"><div class="wm-inner sm-inner"><div class="wm-face sm-face"><div class="wm-eye we-l"></div><div class="wm-eye we-r"></div><div class="wm-mouth sm-mouth"></div></div><div class="wm-seeds-row"><div class="wm-seed"></div><div class="wm-seed"></div></div></div></div></div>
+      <div class="talk-bub wide-bub">
+        <div class="bub-label">// APP PROCESS DESCRIPTION</div>
+        <p>The <strong>M3LON</strong> app flow begins with simple onboarding — start at a welcome splash screen and either log in or register a new account. Once inside, you land on a central dashboard acting as your financial hub: showing total monthly budget, a "Safe to Spend" daily amount, and visual rings tracking spending per category like Food and Shopping.</p>
+        <p style="margin-top:0.6rem">From here, the process moves into active tracking — view a list of all expenses or tap the plus button to manually log new ones by entering amount, date, and category. The app automatically turns this data into easy-to-read charts and graphs in the insights section. To keep you motivated, a <strong>gamified system</strong> earns XP and unlocks badges for consistent tracking — turning budget management into a game with levels and daily streaks. Personalise the entire experience through settings: switch between light and dark modes, manage notifications, and set up automated receipt imports from your inbox.</p>
+
+        <div class="bub-label" style="margin-top:1.5rem">// 4.10 NAVIGATION DIAGRAM</div>
+        <div class="flow-vis">
+          <div class="fv-row1">
+            <div class="fv-node fv-splash">01<br/>SPLASH</div>
+            <div class="fv-a">→</div>
+            <div class="fv-node">02<br/>LOGIN</div>
+            <div class="fv-a">↕</div>
+            <div class="fv-node fv-purple">03<br/>REGISTER</div>
+            <div class="fv-a fv-big-a">→</div>
+            <div class="fv-node fv-home">04<br/>HOME ⭐</div>
+          </div>
+          <div class="fv-down">↓ Bottom Navigation Bar &amp; FAB '+' accessible from Home and all screens</div>
+          <div class="fv-row2">
+            <div class="fv-node fv-sm">05<br/>ADD EXP</div>
+            <div class="fv-node fv-sm">06<br/>EXP LIST</div>
+            <div class="fv-node fv-sm">07<br/>CAT SUM</div>
+            <div class="fv-node fv-sm">08<br/>GRAPHS</div>
+            <div class="fv-node fv-sm">09<br/>BUDGET</div>
+            <div class="fv-node fv-sm fv-gold">10<br/>PROFILE 🏆</div>
+          </div>
+        </div>
+
+        <div class="nav-tbl-wrap">
+          <table class="nav-tbl">
+            <thead><tr><th>From Screen</th><th>To Screen</th><th>Trigger / Action</th></tr></thead>
+            <tbody>
+              <tr><td>Splash / Login</td><td>Home Dashboard</td><td>Successful login</td></tr>
+              <tr><td>Splash / Login</td><td>Registration</td><td>Tap 'Register' link</td></tr>
+              <tr><td>Registration</td><td>Home Dashboard</td><td>Successful registration</td></tr>
+              <tr><td>Home Dashboard</td><td>Add Expense</td><td>Tap FAB '+' button</td></tr>
+              <tr><td>Home Dashboard</td><td>Expense List</td><td>Tap 'View All' or bottom nav</td></tr>
+              <tr><td>Home Dashboard</td><td>Graphs</td><td>Bottom navigation bar</td></tr>
+              <tr><td>Home Dashboard</td><td>Budget Settings</td><td>Bottom navigation bar</td></tr>
+              <tr><td>Home Dashboard</td><td>Profile</td><td>Bottom navigation bar</td></tr>
+              <tr><td>Expense List</td><td>Add / Edit Expense</td><td>Tap any expense entry</td></tr>
+              <tr><td>Expense List</td><td>Category Summary</td><td>Tap category filter</td></tr>
+              <tr><td>Category Summary</td><td>Expense List (filtered)</td><td>Tap any category row</td></tr>
+              <tr><td>Profile</td><td>Login Screen</td><td>Tap 'Logout'</td></tr>
+              <tr class="gold-tr"><td>Any Screen</td><td>Add Expense</td><td>Tap FAB '+' (always visible)</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="site-footer">
-    <div class="footer-logo">🍉 M3LON</div>
-    <div class="footer-tagline">SMART BANKING · SLICED SIMPLE</div>
-    <div class="footer-team">
-      The 5 Watermelons · OPSC6311 · March 2026<br/>
-      Zandile · Tshiamo · Muhluri · Matlhogonolo · Ndabezinhle
-    </div>
-    <div class="footer-copy">// Visual Storyboard · Hosted via GitHub Pages</div>
-    <div class="footer-robot">🤖 Built with MELON-BOT guidance</div>
-  </footer>
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="sf-wm">🍉</div>
+  <div class="sf-name">M3LON</div>
+  <div class="sf-tag">SMART BANKING · SLICED SIMPLE</div>
+  <div class="sf-team">The 5 Watermelons · OPSC6311 · March 2026</div>
+  <div class="sf-names">Zandile Selao · Tshiamo Mosetlha · Muhluri Nkuna · Matlhogonolo Keebine · Ndabezinhle Mathunyane</div>
+  <div class="sf-note">// Visual Storyboard · Hosted via GitHub Pages · MELON-BOT Certified 🤖</div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
